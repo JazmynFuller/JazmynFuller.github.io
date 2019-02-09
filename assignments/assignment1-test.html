@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<title>Are you a Musician? Or Nah?</title>
+</head>
+<body class="container-fluid">
+	<h1>Are you a Musician? Or Nah?</h1>
+	<hr class="heading-underline">
+	<div class="question-bg">	
+		<form class="questions">
+			<h2>Do you know how to read sheet music?</h2>
+			<hr>
+				<div class="answer-choices">
+					<button onclick="newFunction(1)">Yes </button>
+					<button onclick="newFunction(0)"> No </button>
+				</div>	
+		</form>
+	</div>
+		
+	<div class="question-bg">
+		<form class="questions">
+			<h2>Which one of the following is a Romantic Composer?</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Bach   
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Cardi B   
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Beethoven    
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Vivaldi   
+				</div>
+		</form>
+	</div>	
+	
+	<div class="question-bg">
+		<form class="questions">
+			<h2>"It's not a song, it's a piece"</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> No, it's a song 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Facts 
+				</div>
+		</form>
+	</div>
+
+	<div class="question-bg">
+		<form class="questions">
+			<h2>What do conductors usually hold while conducting?</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Baton 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Magic Wand 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Stick 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Musical Wand 
+				</div>	
+		</form>
+	</div>	
+
+	<div class="question-bg">	
+		<form class="questions" id="last-question">
+			<h2>What is this instrument?</h2>
+			<hr>
+			<div class="row justify-content-center">	
+				<img class="img-fluid instrument"src="cello.jpeg" alt="mystery instrument">
+			</div>	
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Mayonnaise 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Violin 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1">Violoncello 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Big Violin 
+				</div>	
+		</form>
+	</div>
+
+	<script>
+		function newFunction(param1) {
+			textValue = param1;
+			var alertText = ['You musician imposter!!!','Okay I see you Mozart!'];
+			alert(alertText[textValue]);
+			// document.getElementById("answer").innerText = "some text here";
+		}
+
+	</script>	
+</body>
+</html>

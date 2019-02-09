@@ -1,0 +1,50 @@
+.container-fluid {
+	background-color: grey;
+	background-image: url("abstract-music-rock-bw.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	min-height: 1980px; 
+
+}
+
+h1 {
+	text-align: center;
+	color: #000 !important;
+	font-family: 'Staatliches', cursive !important;
+	font-size: 600% !important;
+	padding: 2% 0;
+}
+
+hr >.heading-underline{
+	padding-bottom: 5%;
+	border: none !important;
+	height: 20px !important;
+}
+
+h2 {
+	text-align: center;
+	color: white !important;
+}
+.question-bg {
+	background-color: rgba(61, 74, 79,.55);
+	border-radius: 20px;
+	margin: 4% 8%;
+}
+.questions {
+	padding: 5% 15%;
+	color: white !important;
+}
+ #last-question{
+ 	padding-bottom: 10%;
+ }
+
+ .answer-choices {
+ 	padding-top: 2%;
+ 	text-align: center;
+ }
+
+ .instrument {
+ 	height: 50vh !important;
+ }

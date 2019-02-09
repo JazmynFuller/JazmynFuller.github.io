@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<title>Are you a Musician? Or Nah?</title>
+</head>
+<body class="container-fluid">
+	<h1>Are you a Musician? Or Nah?</h1>
+
+	<div id="main-body">
+	<hr class="heading-underline">
+	<div class="question-bg">	
+		<form class="questions">
+			<h2>Do you know how to read sheet music?</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Yes 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> No
+				</div>	
+		</form>
+	</div>
+		
+	<div class="question-bg">
+		<form class="questions">
+			<h2>Which one of the following is a Romantic Composer?</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Bach   
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Cardi B   
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Beethoven    
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Vivaldi   
+				</div>
+		</form>
+	</div>	
+	
+	<div class="question-bg">
+		<form class="questions">
+			<h2>"It's not a song, it's a piece"</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> No, it's a song 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Facts 
+				</div>
+		</form>
+	</div>
+
+	<div class="question-bg">
+		<form class="questions">
+			<h2>What do conductors usually hold while conducting?</h2>
+			<hr>
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1"> Baton 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Magic Wand 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Stick 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Musical Wand 
+				</div>	
+		</form>
+	</div>	
+
+	<div class="question-bg">	
+		<form class="questions" id="last-question">
+			<h2>What is this instrument?</h2>
+			<hr>
+			<div class="row justify-content-center">	
+				<img class="img-fluid instrument"src="cello.jpeg" alt="mystery instrument">
+			</div>	
+				<div class="answer-choices">
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Mayonnaise 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Violin 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="1">Violoncello 
+					<input class="answer-spacing" type="radio" name="boolean-value" value="0"> Big Violin 
+				</div>	
+		</form>
+	</div>
+		<div class="row justify-content-center" style="padding-bottom: 5%">
+				<div class="col-md-1">
+					<button type="button" onclick="getScore();topFunction();" class="btn btn-info btn-lg">Submit</button>
+				</div>
+		</div>
+	</div>
+
+	<script>
+		function topFunction() {
+  			document.body.scrollTop = 0; // For Safari
+  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		function getScore(){
+			var inputMark = document.getElementsByName('boolean-value');
+			var totalScore = 0;
+			for(var i=0; i<inputMark.length; i++) {
+				if((inputMark[i].checked) && (inputMark[i].value ==='1')) {
+					totalScore++;
+				}
+			}
+			var display = document.getElementById("main-body");
+			display.innerHTML = "<h2>"+scoreMsg(totalScore)+"</h2>" + "\n"+"<button type=\"button\" onclick=\"location.reload(true)\" class=\"btn btn-info btn-lg\" style=\"display: flex; margin: 0 auto; \">Wanna try again?</button>";
+		}
+
+		function scoreMsg(total) {
+			switch(total){
+				case 0:
+					return "0 out of 5. I'm not sure if you should take lessons or pick a different hobby" +
+					"<img src=\"https://img.buzzfeed.com/buzzfeed-static/static/2015-03/2/13/enhanced/webdr15/anigif_enhanced-28915-1425320152-12.gif?crop=400:264;0,7&downsize=400:*&output-format=auto&output-quality=auto\" alt=\"Spongebob gif where they're blowing drum sticks\" style=\"display: flex; margin: 0 auto; padding: 5% 0;\" />";
+				case 1:
+					return "1 out of 5. I'm not sure if you should take lessons or pick a different hobby" +
+					"<img src=\"https://img.buzzfeed.com/buzzfeed-static/static/2015-03/2/13/enhanced/webdr15/anigif_enhanced-28915-1425320152-12.gif?crop=400:264;0,7&downsize=400:*&output-format=auto&output-quality=auto\" alt=\"Spongebob gif where they're blowing drum sticks\" style=\"display: flex; margin: 0 auto; padding: 5% 0;\" />";
+				case 2:
+					return "2 out of 5. I'm not sure if you should take lessons or pick a different hobby" +
+					"<img src=\"https://img.buzzfeed.com/buzzfeed-static/static/2015-03/2/13/enhanced/webdr15/anigif_enhanced-28915-1425320152-12.gif?crop=400:264;0,7&downsize=400:*&output-format=auto&output-quality=auto\" alt=\"Spongebob gif where they're blowing drum sticks\" style=\"display: flex; margin: 0 auto; padding: 5% 0;\" />";
+				case 3: 
+					return "3 out of 5 right, AKA you were forced to take lessons when you were a youngin'" + "<img src=\"https://media2.giphy.com/media/DIhpM3T1bxSP6/giphy.gif\" alt=\"Timmy Turner's dad playing bongo drums\" style=\"align-items: center; padding: 5% 0;\" />";
+				case 4:
+					return "You got 4 out of 5 right! Welcome to the family!!" + "<img src=\"https://thumbs.gfycat.com/ElaborateKnobbyCamel-small.gif\"  style=\"display: flex; margin: 0 auto; padding: 5% 0;\"/>";
+				case 5:
+					return "You got all of them right! Welcome to the family!!\n" + "<img src=\"https://thumbs.gfycat.com/ElaborateKnobbyCamel-small.gif\"  style=\"display: flex; margin: 0 auto; padding: 5% 0;\"/>";
+			}
+
+		}
+	</script>	
+</body>
+</html>

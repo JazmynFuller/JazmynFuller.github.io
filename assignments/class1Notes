@@ -1,0 +1,28 @@
+var exampleString = 'single quotes';
+var exampleString2 = "double quotes";
+var	exampleString3 `backtick string`;
+
+var exampleNumber = 1;
+
+var exampleBoolean = true;
+var exampleBoolean = false;
+
+Null -- used for what you intentionally left empty
+
+Undefined --when you don't assign a variable a value
+
+Arrays --
+
+var array1 = ['string1', 'string2', 'string2']
+var array2 = new Array(1,2,3);
+var array3 = new Array();
+
+var array[1] returns 'string2'
+
+functions:
+
+function myFirstFunction(){
+	alert('hello world');
+}
+
+//switch case
