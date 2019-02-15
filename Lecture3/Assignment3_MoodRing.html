@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Assignment 3: Mood Ring</title>
+</head>
+
+<body class="container-fluid">
+
+	<div class="row justify-content-center">
+		<h1>What's your #mood?</h1>
+	</div>
+
+	<div class="row justify-content-center">
+		<h3 id="mood-message">Click to Find Out!</h3>	
+	</div>
+
+	<div class="row justify-content-center">
+		<button type="button" onclick="changeMoodColour()" id="get-mood" value="0" class="btn btn-raised btn-lg">Generate Mood</button>
+	</div>
+
+	<script>
+		mood = "";
+		
+
+		function changeMoodColour(){
+			inputValue = document.getElementById('get-mood');
+			if(inputValue.value==='0') {
+				mood = 'Sunshiny Feeling';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#e4e502";
+				inputValue.value++;
+			} else if(inputValue.value==='1') {
+				mood = 'Depths of despair';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#154ca5";
+				inputValue.value++;
+			} else if(inputValue.value==='2') {
+				mood = 'Intensely Irritated';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#db0404";
+				inputValue.value++;
+			} else if(inputValue.value==='3') {
+				mood = 'Calm and Collected';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#8cd4db";
+				inputValue.value++;
+			} else if(inputValue.value==='4') {
+				mood = 'Just Jealous';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#088c36";
+				inputValue.value++;
+			} else if(inputValue.value==='5') {
+				mood = 'Cautious';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#ead323";
+				inputValue.value++;
+			} else if(inputValue.value==='6') {
+				mood = 'Dull Damsel';
+				document.getElementById('mood-message').innerHTML = mood;
+				document.body.style.backgroundColor = "#bcbcbc";
+				inputValue.value = 0;
+			}
+		}
+
+	</script>
+</body>
+</html>
