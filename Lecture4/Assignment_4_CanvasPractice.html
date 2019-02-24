@@ -2,10 +2,76 @@
 <html>
 <head>
 	<title>Assignment 4: Canvas Practice</title>
+	<style type="text/css">
+
+		body {
+			margin: 0;
+		}
+		canvas {
+			border: 1px solid #000;
+			background-color: blue;
+		}
+		h1{
+			margin: 0 auto;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 
-	
+	<h1>Check out my canvas !</h1>
+	<canvas></canvas>
 
+	<script>
+		var canvas = document.querySelector('canvas');
+		console.log(canvas);
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+
+		var c = canvas.getContext('2d'); // stands for context
+		// c.fillStyle = "rgba(0,255,0,.56)";
+		// c.fillRect(100,100,100,100);
+		// c.fillStyle = "rgba(0,255,0,.86)";
+		// c.fillRect(300,200,100,100);
+		// c.fillStyle = "rgba(0,200,155,.26)";
+		// c.fillRect(500,300,100,100);
+		// c.fillStyle = "rgba(0,45,55,.96)";
+		// c.fillRect(700,400,100,100);
+
+		// //Line
+		// c.beginPath();
+		// c.moveTo(50,300);
+		// c.lineTo(300,100);
+		// c.lineTo(300,400);
+		// c.lineTo(50,300);
+		// c.strokeStyle = "#fa3453";
+		// c.stroke();
+
+		// Arc/Circle
+		c.beginPath();
+		c.arc(650,350, 200, 0, Math.PI*2, false);
+		c.strokeStyle = 'white';
+		c.stroke();
+
+		// function getRandomColor() {
+		// 	var chars = '0123456789abcdef';
+		// 	var color = '#';
+		// 	for(var i=0; i<6; i++) {
+		// 		color+= chars[Math.floor(Math.random()*16)];
+		// 	}
+		// 	return color;
+		// }
+
+		// for(var i=0; i<150; i++) {
+		// 	var x = Math.random()* window.innerWidth;
+		// 	var y = Math.random()* window.innerHeight;
+		// 	var z = Math.random()*50;
+		// 	c.beginPath();
+		// 	c.arc(x,y,z,0,Math.PI*2, false);
+		// 	c.strokeStyle = getRandomColor();
+		// 	c.stroke();
+		// }
+
+	</script>
 </body>
 </html>
