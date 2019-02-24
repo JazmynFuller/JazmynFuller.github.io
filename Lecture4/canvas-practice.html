@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		body{
+			background-color: #fed567;
+		}
+
+		canvas {
+			border: 1px solid black;
+		}
+
+	</style>
+
+	
+
+
+	<title></title>
+</head>
+<body>
+
+
+
+	<canvas id="our-canvas" height="400px" width="400px"></canvas>
+	<button onclick="startLine()">Draw Line</button>
+
+<script type="text/javascript">
+
+		function startLine(){
+			setInterval(draw,400);
+		}
+
+		var canvas = document.getElementById('our-canvas');
+		var ctx = canvas.getContext('2d');
+		var startX = 0;
+
+		function draw(){
+			while(startX <= canvas.width){
+				ctx.beginPath();
+				ctx.moveTo(startX,0);
+				ctx.lineTo(startX,400);
+				ctx.stroke();
+				ctx.strokeStyle = 'rgb(144, 220, 249,.8)'
+				startX = startX + 1;
+			}
+		}	
+	</script>
+</body>
+</html>

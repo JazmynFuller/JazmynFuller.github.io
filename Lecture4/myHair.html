@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+<div id="hairContent"></div>
+
+<button onclick="hair.notice()">My Hair</button>
+
+<script>
+var hair = {
+		name : 'John',
+		color : 'Brown',
+		type : 'Curly',
+		notice: function () {
+			alert(this.color);
+
+		}
+}		 //notice is the name of the function, then you call function... this is a method
+
+		// name - value called "property"
+		// name - object called "Object"
+	// alert(hair['color']);
+
+
+
+// hair['color'] // this will return Brown
+// or
+// hair.color // will return brown also
+</script>
+
+</body>
+
+</html>
