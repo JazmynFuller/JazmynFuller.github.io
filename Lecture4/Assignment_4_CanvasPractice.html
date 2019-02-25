@@ -6,14 +6,38 @@
 
 		body {
 			margin: 0;
+			background-color: #000 !important;
+			background: linear-gradient(357deg, #000000, #191a1b);
+			background-size: 400% 400%;
+
+			-webkit-animation: AnimationName 19s ease infinite;
+			-moz-animation: AnimationName 19s ease infinite;
+			animation: AnimationName 19s ease infinite;
+
+			@-webkit-keyframes AnimationName {
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
+			@-moz-keyframes AnimationName {
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
+			@keyframes AnimationName { 
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
 		}
 		canvas {
-			border: 1px solid #000;
-			background-color: blue;
+			border: 1px solid rgba(0,0,0,0);
+			
 		}
 		h1{
-			margin: 0 auto;
+			/*margin: 0 auto;*/
 			text-align: center;
+			color: white;
 		}
 	</style>
 </head>
@@ -24,34 +48,92 @@
 
 	<script>
 		var canvas = document.querySelector('canvas');
-		console.log(canvas);
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
-
+		// var seeThru = getOpacityValue();
 		var c = canvas.getContext('2d'); // stands for context
-		// c.fillStyle = "rgba(0,255,0,.56)";
-		// c.fillRect(100,100,100,100);
-		// c.fillStyle = "rgba(0,255,0,.86)";
-		// c.fillRect(300,200,100,100);
-		// c.fillStyle = "rgba(0,200,155,.26)";
-		// c.fillRect(500,300,100,100);
-		// c.fillStyle = "rgba(0,45,55,.96)";
-		// c.fillRect(700,400,100,100);
-
-		// //Line
-		// c.beginPath();
-		// c.moveTo(50,300);
-		// c.lineTo(300,100);
-		// c.lineTo(300,400);
-		// c.lineTo(50,300);
-		// c.strokeStyle = "#fa3453";
-		// c.stroke();
 
 		// Arc/Circle
-		c.beginPath();
-		c.arc(650,350, 200, 0, Math.PI*2, false);
-		c.strokeStyle = 'white';
-		c.stroke();
+			// var x = Math.random() *innerWidth;
+			// var y = Math.random() * innerHeight;
+			// var dx = Math.random() * 10;
+			// var dy = Math.random() * 10;
+			// var radius = 30;
+
+		function Circle(x,y,dx,dy,radius,seeThru) {
+			this.x = x;
+			this.y = y;
+			this.dx = dx;
+			this.dy = dy;
+			this.radius = radius;
+			this.seeThru = seeThru;
+
+
+
+			this.draw = function(){
+				c.beginPath();
+				c.arc(this.x,this.y,this.radius, 0, Math.PI*2, false);
+				c.strokeStyle = 'white';
+				c.fillStyle = seeThru;
+				c.fill();
+				c.stroke();
+			}
+
+			this.update = function(){
+				if(this.x+this.radius > innerWidth) {
+					this.dx = -this.dx;
+				}
+
+				if(this.x < this.radius) {
+					this.dx = (-1 *this.dx);
+				}
+
+				if(this.y+this.radius > innerHeight) {
+					this.dy = -this.dy;
+				}
+				if(this.y<=this.radius) {
+					this.dy = -this.dy;
+				}
+
+				this.x+=this.dx;
+				this.y+=this.dy;
+
+				this.draw();
+
+			}
+		}
+
+		var circleArray = [];
+
+		for(var i=0; i<1000; i++) {
+			var x = Math.random() * (innerWidth - radius * .05);
+			var y = Math.random() * (innerHeight - radius * .05);
+			var dx = Math.random() - 0.5;
+			var dy = Math.random() - 0.5;
+			var seeThru = getOpacityValue();
+			var radius = 3;
+			circleArray.push(new Circle(x,y,dx,dy,radius,seeThru));
+			console.log(seeThru);
+		}
+
+
+		function animate(){
+			requestAnimationFrame(animate);
+			c.clearRect(0,0,innerWidth,innerHeight);
+
+			for(var i=0; i<circleArray.length; i++){
+				circleArray[i].update();
+			}
+
+		 }
+
+		 function getOpacityValue(){
+		 	var oValue= 'rgba(255,255,255,';
+		 	var opacityNums = [.1,.2,.3,.4,.5,.6,.7,.8,.9,1];
+		 	oValue += opacityNums[Math.floor(Math.random()*10)];
+		 	oValue += ')';
+		 	return oValue;
+		 }
 
 		// function getRandomColor() {
 		// 	var chars = '0123456789abcdef';
@@ -71,7 +153,7 @@
 		// 	c.strokeStyle = getRandomColor();
 		// 	c.stroke();
 		// }
-
+		animate();
 	</script>
 </body>
 </html>
