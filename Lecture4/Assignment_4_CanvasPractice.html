@@ -17,6 +17,7 @@
 			background-color: #000 !important;
 			background: linear-gradient(357deg, #000000, #191a1b);
 			background-size: 400% 400%;
+			z-index: -500;
 
 			-webkit-animation: AnimationName 19s ease infinite;
 			-moz-animation: AnimationName 19s ease infinite;
@@ -77,6 +78,7 @@
 		var canvas = document.querySelector('canvas');
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
+		var index = 500;
 		// var seeThru = getOpacityValue();
 		var c = canvas.getContext('2d'); // stands for context
 
