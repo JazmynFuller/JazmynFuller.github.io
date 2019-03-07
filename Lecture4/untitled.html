@@ -9,5 +9,54 @@
 
 	<canvas id="our-canvas" height="" width=""></canvas>
 
+	<script type="text/javascript">
+
+		var canvas = document.getElementById('our-canvas');
+		var ctx = canvas.getContext('2d'), startX = 0;
+
+
+
+		var lineObject = {
+			startX: 0;
+			startY: 0;
+			finishX: 0;
+			finishY: 0;
+
+			drawLine: function() {
+				this.ctx.beginPath();
+				this.ctx.moveTo(this.startX, this.startY);
+				ctx.lineTo(this.finishX, this.finishY);
+				ctx.stroke();
+			}
+		}
+
+
+		function lineObj(sX, sY, fX, fY,context{
+			this.startX = sX; // talking about this startX value 
+			this.startY = sY;
+			this.finishX = fX;
+			this.finsihY = fY;
+			this.context = context; // canvas can take on like 4 different contexts
+
+			this.beginPath();
+			this.moveTo(startX, 0);
+			this.context.lineTo(startX, 400);
+			this.context.stroke();
+
+
+		}
+
+		function draw(){
+			if(startX = canvas.width){
+				ctx.beginPath();
+				ctx.moveTo(startX, 0);
+				ctx.lineTo(startX, 400);
+				ctx.strokeStyle = 'rgba(205,95,135,.8)';
+				ctx.stroke();
+			}
+		}
+
+	</script>
+
 </body>
 </html>
