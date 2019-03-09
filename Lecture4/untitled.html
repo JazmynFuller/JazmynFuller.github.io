@@ -31,17 +31,33 @@
 		}
 
 
-		function lineObj(sX, sY, fX, fY,context{
+		function lineObj(sX, sY, fX, fY,context,bgColor,strokeColor){
 			this.startX = sX; // talking about this startX value 
 			this.startY = sY;
 			this.finishX = fX;
 			this.finsihY = fY;
 			this.context = context; // canvas can take on like 4 different contexts
 
-			this.beginPath();
-			this.moveTo(startX, 0);
-			this.context.lineTo(startX, 400);
-			this.context.stroke();
+			this.drawLine = function(){
+				this.beginPath();
+				this.moveTo(startX, 0);
+				this.context.lineTo(startX, 400);
+				this.context.stroke();
+			}
+		
+
+			this.eraseLine = function(){
+
+			}
+
+			/*
+				Elements nested within other elements are considered the child
+				- Parent-child relationship
+				- multiple children within that element are considered siblings
+
+				Info on DOM:
+				DOM w3schools
+			*/
 
 
 		}

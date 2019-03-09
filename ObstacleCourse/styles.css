@@ -1,0 +1,63 @@
+.container-fluid{
+	background: linear-gradient(180deg, #73cbb4, #73b1cb, #eda432);
+	background-size: 800% 900%;
+	background-repeat: no-repeat;
+
+-webkit-animation: AnimationName 12s ease infinite;
+-moz-animation: AnimationName 12s ease infinite;
+animation: AnimationName 12s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:52% 0%}
+    50%{background-position:49% 100%}
+    100%{background-position:52% 0%}
+}
+
+}
+
+canvas{
+	
+    background-color: #000;
+    position:absolute; 
+    top:175px; 
+    left:250px;
+}
+
+h1 {
+	position: relative;
+	padding: 5% 0 0 2%;
+	color:#fff;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+#left-title{
+	text-align: center;
+	margin-left: 40%;
+	padding-top: 5%;
+}
+
+#right-title{
+	text-align: center;
+	margin-right: 40%;
+	padding-top: 5%;
+}
+
+#left-list{
+	margin-left: 40%;
+}
+
+#right-list{
+	margin-right: 40%;
+}
