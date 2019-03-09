@@ -2,6 +2,7 @@
 var myGamePiece;
 var myObstacles = [];
 var myScore;
+var speed = 0;
 
 function startGame() {
     myGamePiece = new component(20, 20, "red", 60, 120);
@@ -19,7 +20,10 @@ var myGameArea = {
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
+        this.interval = setInterval(updateGameArea, speed);
+        if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
+    		this.interval = setInterval(updateGameArea, speed-1);
+    	}
         window.addEventListener('keydown', function (e) {
       		myGameArea.key = e.keyCode;
     	})
