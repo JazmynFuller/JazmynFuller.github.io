@@ -23,6 +23,7 @@ var myGameArea = {
         this.interval = setInterval(updateGameArea, speed);
         if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
     		this.interval = setInterval(updateGameArea, speed-1);
+            myGamePiece.speedX += 1;
     	}
         window.addEventListener('keydown', function (e) {
       		myGameArea.key = e.keyCode;
@@ -119,7 +120,7 @@ function updateGameArea() {
     myGamePiece.update();
 
     if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
-    	myGamePiece.speedX += .5;
+    	myGamePiece.speedX += 1;
     }
 }
 
