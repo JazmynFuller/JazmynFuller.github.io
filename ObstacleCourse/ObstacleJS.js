@@ -32,6 +32,7 @@ var myGameArea = {
     },
     stop : function() {
         clearInterval(this.interval);
+        document.getElementById("restart").style = "display: flex";
     }
 }
 
@@ -104,17 +105,17 @@ function updateGameArea() {
         myObstacles.push(new component(80, x - height - gap, "#48a898", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].speedX = -1;
+        myObstacles[i].speedX = -1.5;
         myObstacles[i].newPos();
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.text="SCORE: " + (Math.floor(myGameArea.frameNo /2));
     myScore.update();
     myGamePiece.newPos();    
     myGamePiece.update();
 
-    if(myGameArea.frameNo>600 && myFameArea.frameNo%100===0){
-    	myGamePiece.speedX += .2;
+    if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
+    	myGamePiece.speedX += .5;
     }
 }
 

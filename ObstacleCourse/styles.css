@@ -41,6 +41,10 @@ h1 {
 	font-weight: bolder;
 }
 
+#restart{
+	display: none;
+}
+
 
 #left-title{
 	text-align: center;
