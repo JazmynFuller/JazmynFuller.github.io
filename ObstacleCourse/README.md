@@ -6,10 +6,10 @@ Using the keyboard arrows, move the object on the screen to avoid obstacles appe
 * Intrusctions to game pops up before interactive game starts
 	* Deeper explanation of what each arrow key does
 * To begin the game the user will have to click start
-* The score will start on 0, and increases by 100 as every millisecond goes by.
+* The score will start on 0, and increases by 1 as every millisecond goes by.
 	* Score will stop increasing if you hit an object
 * The game will go on forever, unless you hit an object
-* Your end-score will be in red once you lose in the center of the screen
+* Your score will freeze once you lose the game, and this will be your end score
 
 ##### Concept I'll build on:
 ![](concept.gif)

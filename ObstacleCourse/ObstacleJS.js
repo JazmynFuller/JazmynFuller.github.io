@@ -23,6 +23,7 @@ var myGameArea = {
         this.interval = setInterval(updateGameArea, speed);
         if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
     		this.interval = setInterval(updateGameArea, speed-1);
+            myGamePiece.speedX+=.5;
     	}
         window.addEventListener('keydown', function (e) {
       		myGameArea.key = e.keyCode;
@@ -73,9 +74,10 @@ function component(width, height, color, x, y, type) {
         var othertop = otherobj.y;
         var otherbottom = otherobj.y + (otherobj.height);
         var crash = true;
-        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright) ) {
             crash = false;
         }
+
         return crash;
     }
 }
@@ -83,7 +85,7 @@ function component(width, height, color, x, y, type) {
 function updateGameArea() {
     var x, height, gap, minHeight, maxHeight, minGap, maxGap;
     for (i = 0; i < myObstacles.length; i += 1) {
-        if (myGamePiece.crashWith(myObstacles[i])) {
+        if ((myGamePiece.crashWith(myObstacles[i]))) {
             myGameArea.stop();
             return;
         } 
@@ -93,8 +95,9 @@ function updateGameArea() {
 
   if (myGameArea.key && myGameArea.key == 38) {myGamePiece.speedY = 	-1; } //downArrow
   if (myGameArea.key && myGameArea.key == 40) {myGamePiece.speedY = 	1; } //upArrow
-  if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; } //backArrow
-  if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = .1; } //forwardArrow
+  // if (myGameArea.key && myGameArea.key == 37) {myGamePiece.speedX = -1; } //backArrow
+  // if (myGameArea.key && myGameArea.key == 39) {myGamePiece.speedX = 1; } //forwardArrow
+
     myGameArea.frameNo += 1;
 
     if (myGameArea.frameNo == 1 || everyinterval(150)) {
@@ -113,14 +116,13 @@ function updateGameArea() {
         myObstacles[i].newPos();
         myObstacles[i].update();
     }
-    myScore.text="SCORE: " + (Math.floor(myGameArea.frameNo /2));
+
+    myScore.text="SCORE: " + (Math.floor(myGameArea.frameNo/10));
     myScore.update();
     myGamePiece.newPos();    
     myGamePiece.update();
 
-    if(myGameArea.frameNo>500 && myFameArea.frameNo%100===0){
-    	myGamePiece.speedX += .5;
-    }
+   
 }
 
 function everyinterval(n) {
