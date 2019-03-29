@@ -1,0 +1,6 @@
+{
+	"Food": [ 
+	{"food": "Hot Dog", "type":"Savory", "cost":"$2.50"},
+	{"food": "Cotton Candy", "type":"Sweet", "cost":"$1.00"}
+	]
+}

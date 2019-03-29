@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Practice</title>
+</head>
+<body>
+	<h1>Get the Food</h1>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	var myFirstJson =	{
+		"Food": [ 
+			{"food": "Hot Dog"},
+			{"food": "Cotton Candy"}
+		]
+	}
+
+	outside.JSON = $.get("https://www.booknomads.com/api/v0/isbn/9789000010134")
+		$(document).ready(function(){
+			myFirstAJAX = $.get("outsideJSON");
+
+			console.log(myFirstAJAX);
+			$("h1").click(function() {  
+				for (var i=0; i<2; i++){
+					alert(myFirstJson["Food"][i]["food"]);
+				}
+			});
+		});
+			
+
+	</script>
+</body>
+</html>

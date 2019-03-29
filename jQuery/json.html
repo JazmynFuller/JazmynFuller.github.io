@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Practice</title>
+</head>
+<body>
+	<h1 onclick="ready()">Get the Food</h1>
+	<script>
+		$("h1").ready(function() {  
+     		$.getJSON("myFirstJson.json", 
+          		alert(myFirstJson.food, myFirstJson.cost);
+		});
+	</script>
+</body>
+</html>
