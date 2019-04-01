@@ -1,5 +1,8 @@
-	body, html{
-			/*background: linear-gradient(254deg, #1bd4a4, #9e9ee1);*/
+.container-fluid {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+body, html{
 			background-color: #313f3d;
 			background-size: 400% 400%;
 		}
@@ -43,9 +46,7 @@
 		}
 
 		#first-section h2, p{
-			/*padding: 1% 25%;*/
 			color: white;
-			/*text-align: center;*/
 		}
 
 		#first-section p{
@@ -79,4 +80,8 @@
 
 		a:hover{
 			color: #9ff9ec;
+		}
+
+		.list-item {
+			font-weight: 80% !important;
 		}
