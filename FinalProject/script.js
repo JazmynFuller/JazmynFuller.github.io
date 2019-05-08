@@ -1,7 +1,7 @@
-console.log("Test")
 
 $(document).ready(function() {
 	var dt = new Date();
+	var map;
 	document.getElementById("datetime").innerHTML = dt;
 
 	var speed = 0;
@@ -216,13 +216,65 @@ $(document).ready(function() {
   		document.getElementById("staten-min").innerHTML = "Location: "+minLoc+"";
 	});
 
+	// Your current position on Earth
+	// navigator.geolocation.getCurrentPosition(success,error);
+
+	// function success(pos){
+	// 	let lat = pos.coords.latitude,
+	// 		long = pos.coords.longitude;
+	// 		var position = lat+","+long;
+	// 		return position;
+	// }
+
+	// function error(){
+ //        console.log('error getting location');
+ //        let lat = -73.816037, long = 40.736340;
+ //        // setUpMap(long,lat);
+ //        var position = lat+","+long;
+ //        return position;
+ //    }
+
 
 
 	var queensCollege = [-73.816037,40.736340];
+	// var currentLocation = success();
+	// console.log(currentLocation);
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdmU4YXd2NTAzdHo0NHFwMXE3dm05dmEifQ.FPP-0NTcmT19M-IuGSlFSQ';
-        var queensCollege = [-73.816037,40.736340]
+    // var queensCollege = [-73.816037,40.736340]
         // manipulate your map
+    // function setUpMap(lat, long){
+
+//     	map = new mapboxgl.Map({
+//             container: 'map',
+//             style: 'mapbox://styles/mapbox/light-v9',
+//             center: [long,lat],
+//             zoom: 15
+//         });
+//            map.on('load', function(){
+
+//     		map.addSource('trafficSource', {
+//         	type: 'vector',
+//         	url: 'mapbox://mapbox.mapbox-traffic-v1'
+//     		});
+//     		var buttonEl = document.getElementById('trafficButton');
+//     		buttonEl.addEventListener('click', function(e){
+//         		addTraffic();
+//     		});
+
+// 		});
+
+//         function addTraffic(){
+//     var firstPOILabel = map.getStyle().layers.filter(function(obj){ 
+//         return obj["source-layer"] == "poi_label";
+//     });
+
+//     for(var i = 0; i < trafficLayers.length; i++) {
+//         map.addLayer(trafficLayers[i], firstPOILabel[0].id);
+//     }
+// }
+
+    // }
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
@@ -231,20 +283,22 @@ $(document).ready(function() {
         });
 
 
-map.on('load', function(){
 
-    map.addSource('trafficSource', {
-        type: 'vector',
-        url: 'mapbox://mapbox.mapbox-traffic-v1'
-    });
+		Map
+		map.on('load', function(){
 
-    
-    var buttonEl = document.getElementById('trafficButton');
-    buttonEl.addEventListener('click', function(e){
-        addTraffic();
-    });
+		    map.addSource('trafficSource', {
+		        type: 'vector',
+		        url: 'mapbox://mapbox.mapbox-traffic-v1'
+		    });
 
-});
+		    
+		    var buttonEl = document.getElementById('trafficButton');
+		    buttonEl.addEventListener('click', function(e){
+		        addTraffic();
+		    });
+
+		});
 
 function addTraffic(){
     var firstPOILabel = map.getStyle().layers.filter(function(obj){ 
