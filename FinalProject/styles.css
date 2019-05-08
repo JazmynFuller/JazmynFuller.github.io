@@ -1,0 +1,157 @@
+body { 
+    margin:0; 
+    padding:0; 
+    background-color: #efefef;
+}
+#title{
+    text-align: center;
+    padding: 2% 0;
+    font-weight: 800;
+}
+
+p{
+    text-align: center;
+}
+
+#second-title {
+    padding: 3% 0;
+}
+
+#map { 
+   width: 70vw; 
+   height: 80vh; 
+   margin: 0 auto;
+}
+#trafficButton {     
+    position: absolute;     
+    top: 85%;
+    left: 48%;    
+    background-color: #444;    
+    color: #fff;    
+    border: 2px solid #fff;    
+    border-radius: 7px;    
+    font-family: sans-serif;    
+    padding: 0.8em;    
+    cursor: pointer;    
+    transition: 0.3s all;
+}
+#trafficButton:hover {
+    background-color: #777;
+}
+
+.borough-data-1 {
+    background-color: #000;
+    /*margin: 5% 10%;*/
+    margin-bottom: -2%;
+    text-align: center;
+}
+
+.borough-data-2 {
+    background-color: rgba(0,0,0,0);
+    margin-bottom: -2%;
+    text-align: center;
+}
+
+.speedometers{
+    margin-left: 5%;
+}
+
+.black-bg-title{
+    padding-top: 8%;
+    text-align: center;
+    color: #fff;
+}
+
+.white-bg-title {
+   padding-top: 15%;
+   text-align: center; 
+   color: #000;
+   font-weight: 400
+}
+
+.list-group {
+    margin: 5% 10%;
+}
+
+.location-bg {
+    background-color: #000;
+    padding: 1% 5%;
+}
+
+.white-bg-captions{
+    padding: 1% 7%;
+}
+
+.unselectable {
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* css formats for the gauge */
+        .gauge .domain {
+            stroke-width: 2px;
+            stroke: #000;
+        }
+
+        .gauge .tick line {
+            stroke: #000;
+            stroke-width: 2px;
+        }
+        
+        .gauge line {
+            stroke: #000;
+        }
+
+        .gauge .arc, .gauge .cursor {
+            opacity: 0;
+        }
+
+        .gauge .major {
+            fill: #000;
+            font-size: 20px;
+            font-family: 'Play', verdana, sans-serif;
+            font-weight: normal;
+        }
+        
+        .gauge .indicator {
+            stroke: #EE3311;
+            fill: #000;
+            stroke-width: 4px;
+        }
+
+        /* css formats for the segment display */
+        .segdisplay .on {
+            fill: #2fb0bc;
+
+        }
+
+        .segdisplay .off {
+            fill: #00FFFF;
+            opacity: 0.15;
+        }
+.first-row-speed .gauge .tick line{
+
+         stroke: #fff;
+            stroke-width: 2px;
+}
+
+.first-row-speed .gauge line {
+    stroke: #fff;
+}
+
+.first-row-speed .gauge .major {
+    fill: #fff;
+}
+
+.first-row-speed .gauge .indicator {
+    fill: #fff;
+}
+
+.first-row-speed .domain {
+    stroke: #fff;
+}
+
+

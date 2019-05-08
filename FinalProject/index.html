@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Traffic Data</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+	<script src="https://data.cityofnewyork.us/resource/i4gi-tjb9.geojson"></script>
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
+    
+    <script type="text/javascript" src="http://iop.io/js/vendor/d3.v3.min.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerEvents/pointerevents.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/vendor/polymer/PointerGestures/pointergestures.js"></script>
+    <script type="text/javascript" src="http://iop.io/js/iopctrl.js"></script>
+</head>
+<body>
+	<h1 id="title">Live Traffic Data</h1>
+
+	<div id='map'></div>
+	<div class="row justify-content-center" id='trafficButton'>Add traffic</div>
+	<div class="row justify-content-center">
+		<h2 id="second-title">Average Speed in NYC: </h2>
+	</div>
+	<div class="row justify-content-center">
+		<p><span id="datetime"></span></p>
+	</div>
+	<div class="row justify-content-center">
+		<span id="speedometer" class="speedometers"></span>	
+	</div>
+	
+	<!-- Brooklyn Traffic Information -->
+	<div class="row justify-content-center borough-data-1 ">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h2 class="black-bg-title">Brooklyn Speeds</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center borough-data-1 first-row-speed">
+		<div id="brooklyn" class="col-md-6">
+			<span id="speedometer-bk"></span>
+		</div>
+		<div id="queens" class="col-md-6">
+			<span id="speedometer-bkmin"></span>
+		</div>
+	</div>
+	<div class="row justify-content-between location-bg black-bg-title">
+		<div class="col-md-5">
+			<p id="brooklyn-max"></p>
+		</div>
+		<div class="col-md-5">
+			<p id="brooklyn-min"></p>
+		</div>	
+	</div>
+	
+	<!-- Queens Traffic Information -->
+	<div class="row justify-content-center borough-data-2 ">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h2 class="white-bg-title">Queens Speeds</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center borough-data-2">
+		<div id="queens" class="col-md-6">
+			<span id="speedometer-q"></span>
+		</div>
+		<div id="queens" class="col-md-6">
+			<span id="speedometer-qmin"></span>
+		</div>
+	</div>
+	<div class="row justify-content-between white-bg-captions">
+		<div class="col-md-5">
+			<p id="queens-max"></p>
+		</div>
+		<div class="col-md-5">
+			<p id="queens-min"></p>
+		</div>	
+	</div>
+
+	<!-- Manhattan Traffic Information -->
+	<div class="row justify-content-center borough-data-1 ">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h2 class="black-bg-title">Manhattan Speeds</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center borough-data-1 first-row-speed">
+		<div id="queens" class="col-md-6">
+			<span id="speedometer-m"></span>
+		</div>
+		<div id="manhattan" class="col-md-6">
+			<span id="speedometer-mmin"></span>
+		</div>
+	</div>
+	<div class="row justify-content-between location-bg black-bg-title">
+		<div class="col-md-5">
+			<p id="manhattan-max"></p>
+		</div>
+		<div class="col-md-5">
+			<p id="manhattan-min"></p>
+		</div>	
+	</div>
+
+	<!-- Bronx Traffic Information -->
+	<div class="row justify-content-center borough-data-2 ">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h2 class="white-bg-title">Bronx Speeds</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center borough-data-2">
+		<div class="col-md-6">
+			<span id="speedometer-b"></span>
+		</div>
+		<div class="col-md-6">
+			<span id="speedometer-bmin"></span>
+		</div>
+	</div>
+	<div class="row justify-content-between white-bg-captions">
+		<div class="col-md-5">
+			<p id="bronx-max"></p>
+		</div>
+		<div class="col-md-5">
+			<p id="bronx-min"></p>
+		</div>	
+	</div>
+
+	<!-- Staten Island Traffic Information -->
+	<div class="row justify-content-center borough-data-1 ">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h2 class="black-bg-title">Staten Island Speeds</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center borough-data-1 first-row-speed">
+		<div class="col-md-6">
+			<span id="speedometer-s"></span>
+		</div>
+		<div class="col-md-6">
+			<span id="speedometer-smin"></span>
+		</div>
+	</div>
+	<div class="row justify-content-between location-bg black-bg-title">
+		<div class="col-md-5">
+			<p id="staten-max"></p>
+		</div>
+		<div class="col-md-5">
+			<p id="staten-min"></p>
+		</div>	
+	</div>
+	
+
+	
+<script src='traffic-layers.js'></script>
+<script type="text/javascript" src="script.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+</body>
+</html>
