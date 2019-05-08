@@ -79,7 +79,11 @@ p{
 }
 
 .white-bg-captions{
-    padding: 1% 7%;
+    padding: 0 7%;
+}
+
+.white-speed-labels{
+    color:#fff;
 }
 
 .unselectable {
