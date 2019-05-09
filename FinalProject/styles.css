@@ -163,4 +163,20 @@ p{
     stroke: #fff;
 }
 
+#collision-title {
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
 
+hr{
+    margin: 0 18%;
+    padding: 2% 0;
+}
+
+.accident-sum{
+    padding: 5% 0;
+}
+
+.accident-sum h3 {
+    padding: 5% 0;
+}
