@@ -1,4 +1,5 @@
 # FinalTrafficData
+This site displays real-time traffic speed and collision data in NYC. To display the data I'm pulling from the API's below, I am using the D3js library. I am also using the Bootstrap Framework to ensure my site can be accessed across all devices.
 
 ## API Sources for this Project
 
