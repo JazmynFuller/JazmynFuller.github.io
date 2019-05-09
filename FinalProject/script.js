@@ -293,7 +293,8 @@ function addTraffic(){
 	                .call(gauge);
 
 	        segDisplay.value(avg); // average speed in NYC
-	        gauge.value(avg); 
+	        gauge.value(avg);
+
 	}
 
 
@@ -669,9 +670,15 @@ function addTraffic(){
 	}
 
 
+	$(".speedometer-effect").hover(function() {
+         	$(this).effect("shake",{ times:3 }, 500);
+         });
 
 	
 
 });
+
+
+
 
 
