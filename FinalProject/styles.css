@@ -346,3 +346,10 @@ hr{
         100%{background-position:93% 0%}
     }
 }
+
+#people-injured, #people-killed, #cyclists-injured, #cyclists-killed, #peds-injured, #peds-killed  {
+    font-weight: 400;
+    color: red;
+}
+
+

@@ -67,11 +67,12 @@ $(document).ready(function() {
 	  console.log("Accidents in Staten Island "+Number(sAccidents));
 	  console.log("Accidents in Bronx "+Number(bXAccidents));
 
-	  accidentPerBorough(Number(bkAccidents),Number(qAccidents),Number(mAccidents),Number(bXAccidents),Number(sAccidents));
+	  // accidentPerBorough(Number(bkAccidents),Number(qAccidents),Number(mAccidents),Number(bXAccidents),Number(sAccidents));
 
 	});
-	//  https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=date>=2019-01-01T00:00:00.000
-	// https://data.cityofnewyork.us/resource/qiz3-axqb.json?date=2012-07-01T00:00:00.000
+	
+
+
 
 	var j = $.ajax({
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
@@ -270,6 +271,45 @@ $(document).ready(function() {
   		console.log("Min Speed Location: "+minLoc);
   		document.getElementById("staten-min").innerHTML = "Location: "+minLoc+"";
 	});
+
+
+	$.ajax({
+	    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json",
+	    type: "GET",
+	    data: {
+	      "$limit" : 5000,
+	      "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
+	    }
+		}).done(function(data) {
+		   var personsInjured = 0, personsKilled = 0, cyclistsInjured = 0, cyclistsKilled =0, pedsInjured = 0, pedsKilled =0;
+		  // alert("Retrieved " + data.length + " records from the dataset!");
+		  console.log("accident count "+data[5]["number_of_persons_injured"]);
+		  for(var i=0; i<data.length; i++) {
+		  	if(Number(data[i]["number_of_persons_injured"])>0) {
+		  		personsInjured+=Number(data[i]["number_of_persons_injured"]);
+		  	}
+		  	if(Number(data[i]["number_of_persons_killed"])>0) {
+		  		personsKilled+=Number(data[i]["number_of_persons_killed"]);
+		  	}
+		  	if(Number(data[i]["number_of_pedestrians_injured"])>0) {
+		  		pedsInjured+=Number(data[i]["number_of_pedestrians_injured"]);
+		  	}
+		  	if(Number(data[i]["number_of_pedestrians_killed"])>0) {
+		  		pedsKilled+=Number(data[i]["number_of_pedestrians_killed"]);
+		  	}
+		  	if(Number(data[i]["number_of_number_of_cyclist_injured"])>0) {
+		  		cyclistsInjured+=Number(data[i]["number_of_number_of_cyclist_injured"]);
+		  	}
+		  	if(Number(data[i]["number_of_number_of_cyclist_killed"])>0) {
+		  		cyclistsKilled+=Number(data[i]["number_of_number_of_cyclist_killed"]);
+		  	} else continue;
+		  }
+		  // console.log("Amount of people injured "+personsInjured);
+		  people(personsInjured,personsKilled);
+		  cyclists(cyclistsInjured,cyclistsKilled);
+		  document.getElementById("peds-injured").innerHTML = pedsInjured;
+  		document.getElementById("peds-killed").innerHTML = pedsKilled;
+		});
 
 	showAfterFive();
 
@@ -738,15 +778,13 @@ function addTraffic(){
 
   	// Type Injured/Killed
   	function people(pInjured,pKilled) {
-
+  		document.getElementById("people-injured").innerHTML = pInjured;
+  		document.getElementById("people-killed").innerHTML = pKilled;
   	}
   	function cyclists(cInjured,cKilled) {
-
+  		document.getElementById("cyclists-injured").innerHTML = cInjured;
+		document.getElementById("cyclists-killed").innerHTML = cKilled;
   	}
-  	function peds(pedInjured,pedKilled) {
-
-  	}
-
 
 
 });
