@@ -277,7 +277,7 @@ $(document).ready(function() {
 	    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json",
 	    type: "GET",
 	    data: {
-	      "$limit" : 5000,
+	      "$limit" : 80000,
 	      "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
 	    }
 		}).done(function(data) {

@@ -18,6 +18,12 @@ body {
     color: rgba(255,0,0,1);
     padding-bottom: 5%;
 }
+
+.non-chart-stats h3{
+    padding-top: 5%;
+    font-weight: 900;
+}
+
 #people1{
     margin-top: 5%;
 }
