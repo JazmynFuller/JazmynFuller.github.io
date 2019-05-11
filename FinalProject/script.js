@@ -1,5 +1,4 @@
 var dt = new Date();
-	var map;
 	document.getElementById("datetime").innerHTML = dt;
 
 	function hideAfterFive() {
@@ -78,7 +77,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -95,7 +94,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -132,7 +131,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -168,7 +167,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -205,7 +204,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -241,7 +240,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
