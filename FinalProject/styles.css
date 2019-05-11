@@ -8,6 +8,111 @@ body {
     padding: 2% 0;
     font-weight: 800;
 }
+.intro-layer {
+    background-color: #efefef
+    z-index:5;
+}
+
+#total-num-accidents {
+    font-weight: 600;
+    color: rgba(255,0,0,1);
+    padding-bottom: 5%;
+}
+#people1{
+    margin-top: 5%;
+}
+
+.people-affected {
+    margin-right: 38%;
+}
+
+.peds-affected{
+    margin-right: 5%;
+}
+
+.cyclists-affected{
+    margin-right: 6%;
+}
+
+#people3, #people1{
+    margin-top: 4%;
+}
+
+#first-chart{
+    padding-bottom: 4%;
+}
+
+
+#intro-ti {
+    text-align: center;
+    margin-top: 8%;
+    font-size: 400%;
+    font-weight: 800;
+}
+
+
+#accident-per-b{
+   padding-bottom: 5%;
+}
+
+big{
+    font-size: 400%;
+}
+
+.car-bike-person{
+    margin-left: 5%;
+}
+
+#city {
+  margin: 15% 0;
+  display: block;
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 4px solid;
+  margin-top: 10px;
+  height: 300px
+}
+
+/*pink car*/
+g#pinkCar {
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*blue sky changing opacity*/
+rect#XMLID_17_ {
+  animation: hideshow 6s infinite;
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes move {
+  0% {
+    translateX(0px);
+  }
+  100% {
+    transform: translateX(7400px);
+  }
+}
+
 
 p{
     text-align: center;
@@ -18,23 +123,26 @@ p{
 }
 
 #map { 
-   width: 70vw; 
-   height: 80vh; 
-   margin: 0 auto;
+ /*   padding: 5% 0;*/
+    width: 70vw;
+    height: 80vh;
+    margin: 0 auto;
+    /* padding-bottom: 15%; */
+    /*margin-bottom: 1%;*/
+    /*margin-left: 34%;*/
 }
-#trafficButton {     
+/*#trafficButton {     
     position: absolute;     
-    top: 85%;
-    left: 48%;    
+    bottom: 5%;
+    left: 45%;    
     background-color: #444;    
     color: #fff;    
     border: 2px solid #fff;    
     border-radius: 7px;    
     font-family: sans-serif;    
-    padding: 0.8em;    
     cursor: pointer;    
     transition: 0.3s all;
-}
+}*/
 #trafficButton:hover {
     background-color: #777;
 }
@@ -91,6 +199,29 @@ p{
     color:#fff;
 }
 
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .unselectable {
             -moz-user-select: -moz-none;
             -khtml-user-select: none;
@@ -98,7 +229,9 @@ p{
             -ms-user-select: none;
             user-select: none;
         }
-
+.main-content{
+    display: none;
+}
         /* css formats for the gauge */
         .gauge .domain {
             stroke-width: 2px;
@@ -168,10 +301,48 @@ p{
     padding-bottom: 2%;
 }
 
+.addTrafficButton{
+    padding-bottom: 3%;
+}
+
 hr{
     margin: 0 18%;
 }
 
 .accident-sum h3 {
-    padding: 5% 0;
+    padding: 5% 0 0 0;
+}
+
+.car-bike-person{
+    padding-bottom: 5%;
+}
+
+.comments{
+    padding: 4% 0;
+    color: white;
+    font-weight: 400%;
+    font-size: 120%;
+
+   background: linear-gradient(39deg, #83bbcf, #396b6d, #153233);
+   /*background-size: 600% 600%;*/
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:93% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:93% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:93% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:93% 0%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:93% 0%}
+        50%{background-position:0% 100%}
+        100%{background-position:93% 0%}
+    }
 }

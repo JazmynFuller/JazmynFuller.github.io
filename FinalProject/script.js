@@ -1,21 +1,77 @@
-$(document).ready(function() {
-	var dt = new Date();
+var dt = new Date();
 	var map;
 	document.getElementById("datetime").innerHTML = dt;
 
+	function hideAfterFive() {
+		$('#hideMe').show(); 
+		setTimeout(function() { 
+       		$('#hideMe').fadeOut(); 
+   		}, 13000);
+	}
+
+hideAfterFive(); // GIVE TIME FOR DATA TO LOAD
+
+$(document).ready(function() {
+
+	function showAfterFive() {
+		setTimeout(function() {
+			// $('.main-content').fadeOut(); 
+   			document.querySelector('.main-content').style.display = 'block';
+
+		}, 13000);
+	}
+	
+
 	var speed = 0;
-	var x = $.ajax({
-    url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
+
+	$.ajax({
+    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json?$where=date between '2019-01-01T12:00:00' and '2019-05-30T14:00:00'",
     type: "GET",
     data: {
-      "$limit" : 5000,
+      "$limit" : 80000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
-  		// alert("Retrieved " + data.length + " records from the dataset!");
-  		console.log(data[0]);
-  		// console.log(data);
+	  var aData = [0,0,0,0,0];
+	  // alert("Retrieved " + data.length + " records from the dataset!");
+	  var totalAccidents = data.length;
+	  let bkAccidents = 0;
+	  let bXAccidents = 0;
+	  let qAccidents = 0;
+	  let mAccidents = 0;
+	  let sAccidents = 0;
+	  totalAccidentsThisYear(totalAccidents);
+	  console.log(data[100]["borough"]);
+	  
+
+	  for(var i = 0; i<data.length; i++) {
+	  	if(data[i]["borough"]=='BROOKLYN') {
+	  		bkAccidents+=1;
+	  	}
+	  	if(data[i]["borough"]=='QUEENS') {
+	  		qAccidents+=1;
+	  	}
+	  	if(data[i]["borough"]=='MANHATTAN') {
+	  		mAccidents+=1;
+	  	}
+	  	if(data[i]["borough"]=='BRONX') {
+	  		bXAccidents+=1;
+	  	}
+	  	if(data[i]["borough"]=='STATEN ISLAND') {
+	  		sAccidents+=1;
+	  	} else continue;
+	  }
+	  console.log("Accidents in Brooklyn "+Number(bkAccidents));
+	  console.log("Accidents in Queens "+Number(qAccidents));
+	  console.log("Accidents in Manhattan "+Number(mAccidents));
+	  console.log("Accidents in Staten Island "+Number(sAccidents));
+	  console.log("Accidents in Bronx "+Number(bXAccidents));
+
+	  accidentPerBorough(Number(bkAccidents),Number(qAccidents),Number(mAccidents),Number(bXAccidents),Number(sAccidents));
+
 	});
+	//  https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=date>=2019-01-01T00:00:00.000
+	// https://data.cityofnewyork.us/resource/qiz3-axqb.json?date=2012-07-01T00:00:00.000
 
 	var j = $.ajax({
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
@@ -215,6 +271,7 @@ $(document).ready(function() {
   		document.getElementById("staten-min").innerHTML = "Location: "+minLoc+"";
 	});
 
+	showAfterFive();
 
 	var queensCollege = [-73.816037,40.736340];
 	// var currentLocation = success();
@@ -225,7 +282,7 @@ $(document).ready(function() {
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
             center: queensCollege,
-            zoom: 15
+            zoom: 10
         });
 
 
@@ -674,7 +731,23 @@ function addTraffic(){
          	$(this).effect("shake",{ times:3 }, 500);
          });
 
-	
+  	// Motor Vehicle Accident Data
+  	function totalAccidentsThisYear(total){
+  		document.getElementById("total-num-accidents").innerHTML = total;
+  	}
+
+  	// Type Injured/Killed
+  	function people(pInjured,pKilled) {
+
+  	}
+  	function cyclists(cInjured,cKilled) {
+
+  	}
+  	function peds(pedInjured,pedKilled) {
+
+  	}
+
+
 
 });
 
