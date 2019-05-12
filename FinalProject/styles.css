@@ -1,8 +1,33 @@
 body { 
-    margin:0; 
-    padding:0; 
+  margin:0; padding:0;
+    
     background-color: #efefef;
 }
+.sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+
+/* Spinner Circle Rotation */
+.sp-circle {
+  border: 4px rgba($spCol,0.25) solid;
+  border-top: 4px rgba($spCol,1) solid;
+  border-radius: 50%;
+  -webkit-animation: spCircRot .6s infinite linear;
+  animation: spCircRot .6s infinite linear;
+}
+@-webkit-keyframes spCircRot {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spCircRot {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+
 #title{
     text-align: center;
     padding: 2% 0;
@@ -70,16 +95,16 @@ big{
 }
 
 #city {
-  margin: 15% 0;
+  margin: 0 auto;
   display: block;
   position: relative;
   text-align: center;
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 4px solid;
-  margin-top: 10px;
-  height: 300px
+  border-top: 6px solid;
+  margin-top: 2%;
+  height: 280px
 }
 
 /*pink car*/
@@ -129,26 +154,15 @@ p{
 }
 
 #map { 
- /*   padding: 5% 0;*/
-    width: 70vw;
-    height: 80vh;
-    margin: 0 auto;
-    /* padding-bottom: 15%; */
-    /*margin-bottom: 1%;*/
-    /*margin-left: 34%;*/
+     margin-left: 18%;
+     width: 60vw;
+     height: 50vw;
 }
-/*#trafficButton {     
-    position: absolute;     
-    bottom: 5%;
-    left: 45%;    
-    background-color: #444;    
-    color: #fff;    
-    border: 2px solid #fff;    
-    border-radius: 7px;    
-    font-family: sans-serif;    
-    cursor: pointer;    
-    transition: 0.3s all;
-}*/
+
+.mapboxgl-canvas {
+  left: 0;
+}
+
 #trafficButton:hover {
     background-color: #777;
 }

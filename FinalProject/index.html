@@ -11,11 +11,13 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 
-	<script src="https://d3js.org/d3.v3.js"></script>
-	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+	<!-- <script src="https://d3js.org/d3.v3.js"></script> -->
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.53.1/mapbox-gl-dev.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
 	<script src="https://data.cityofnewyork.us/resource/i4gi-tjb9.geojson"></script>
-	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
     <script type="text/javascript" src="d3.v3.min.js"></script>
     <script type="text/javascript" src="pointerevents.js"></script>
     <script type="text/javascript" src="pointergestures.js"></script>
@@ -263,7 +265,8 @@
 	<h2 style="font-weight: 500; padding-bottom: 3%; ">Click for Real Time Traffic</h2>
 </div>
 
-<div id='map'></div>
+<div class="row justify-content-center" id='map'></div>
+
 <div class="row justify-content-center addTrafficButton">
 	<button id='trafficButton' type="button" class="btn btn-warning">Add Traffic</button>
 </div>
@@ -284,6 +287,9 @@
 
 <div class="intro-layer row justify-content-center fade-out-bck" id="hideMe">
 	<h2 id="intro-ti">NYC Traffic Statistics</h2>
+	<div class=" row justify-content-center ring-2">
+		<div class="sp sp-circle"></div>
+    </div>
 	<svg class="fade-out-bck"version="1.1" id="city" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7174.5 1486.4" style="enable-background:new 0 0 7174.5 1486.4;" xml:space="preserve">
       <style type="text/css">
         .st0{fill:#29C3E9;}
@@ -305,7 +311,7 @@
       <line id="XMLID_16_" class="st3" x1="21.5" y1="1475.1" x2="7174.5" y2="1475.1" />
       <g id="XMLID_14_">
         <g id="XMLID_43_">
-          <line id="XMLID_46_" class="st4" x1="101.3" y1="1402.1" x2="116.3" y2="1402.1" />
+          <line id="XMLID_46_" class="st4" x1="101.3" y1="1402.1" x2="116.3" y2="1402.1"/>
           <line id="XMLID_45_" class="st5" x1="205.5" y1="1402.1" x2="7065.5" y2="1402.1" />
           <line id="XMLID_44_" class="st4" x1="7110.1" y1="1402.1" x2="7125.1" y2="1402.1" />
         </g>
@@ -318,7 +324,7 @@
       <rect id="XMLID_25_" x="2638.1" y="338.5" class="st1" width="305.2" height="993.4" />
       <rect id="XMLID_29_" x="3634.1" y="753.2" class="st2" width="305.2" height="579.3" />
       <rect id="XMLID_28_" x="3987.9" y="458.4" class="st2" width="305.2" height="874.1" />
-      <rect id="XMLID_27_" x="4651" y="579" class="st2" width="350.3" height="753" />
+      <rect id="XMLID_27_" x="4651"   y="579" class="st2" width="350.3" height="753" />
       <rect id="XMLID_30_" x="4887.2" y="677.7" class="st6" width="228.1" height="653.3" />
       <rect id="XMLID_31_" x="5102.1" y="338.5" class="st1" width="305.2" height="993.4" />
       <rect id="XMLID_35_" x="6489.7" y="456.4" class="st2" width="305.2" height="874.1" />
