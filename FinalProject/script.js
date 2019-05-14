@@ -15,7 +15,7 @@ $(document).ready(function() {
 	function showAfterFive(map) {
 		setTimeout(function() {
 			// $('.main-content').fadeOut(); 
-   			document.querySelector('.main-content').style.display = 'block';
+   			document.querySelector('.main-content').style.visibility = 'visible';
    			$('#map').show();
    			map.resize();
 

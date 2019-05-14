@@ -228,7 +228,8 @@ p{
             user-select: none;
         }
 .main-content{
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
 }
         /* css formats for the gauge */
         .gauge .domain {
