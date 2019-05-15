@@ -317,7 +317,7 @@ $(document).ready(function() {
 
 	var queensCollege = [-73.816037,40.736340];
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdWE5OGRrZjAwYWc0ZW1teGkzNzY2N28ifQ.kqkrJ_pG1wZALwXlxOMdIQ';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdmU4YXd2NTAzdHo0NHFwMXE3dm05dmEifQ.FPP-0NTcmT19M-IuGSlFSQ';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
