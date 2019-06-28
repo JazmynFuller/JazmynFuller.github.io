@@ -29,7 +29,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json?$where=date between '2019-01-01T12:00:00' and '2019-05-30T14:00:00'",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -79,7 +79,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -96,7 +96,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -133,7 +133,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -169,7 +169,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -206,7 +206,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -242,7 +242,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 2800000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -278,7 +278,7 @@ $(document).ready(function() {
 	    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json",
 	    type: "GET",
 	    data: {
-	      "$limit" : 80000,
+	      "$limit" : 2800000,
 	      "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
 	    }
 		}).done(function(data) {
