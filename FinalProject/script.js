@@ -79,7 +79,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -96,7 +96,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -133,7 +133,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -169,7 +169,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -206,7 +206,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -242,7 +242,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
