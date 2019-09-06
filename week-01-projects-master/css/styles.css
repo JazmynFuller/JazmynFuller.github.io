@@ -1,0 +1,49 @@
+.hero-bg{
+	background-image: url(../img/milkbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.text-bg{
+	text-align: center;
+	background-color: rgba(0,0,0,.5);
+	margin: 10% 20%;
+	padding: 5%;
+	color: #fff;
+}
+
+#the-cookies{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.cookie-flavours {
+	text-align: center;
+}
+
+.flavour-name {
+	margin-top: 2%;
+}
+
+.img-fluid {
+	border-radius: 50%;
+}
+
+.about-us {
+	background-color: grey;
+	margin-top: 2%;
+	padding: 2% 0;
+}
+
+.contact-info {
+	text-align: center;
+	color: #fff;
+	padding: 5% 0;
+	background-color: #12afe3;
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+}
