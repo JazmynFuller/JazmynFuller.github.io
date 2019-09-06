@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		@font-face {
+			src: url(../fonts/Roddenberry.ttf);
+			font-family: star-wars;
+		}
+	
+		body{
+			margin: 0;
+			background: linear-gradient(357deg, #000000, #191a1b);
+			background-size: 400% 400%;
+			/*z-index: -500;*/
+
+			-webkit-animation: AnimationName 19s ease infinite;
+			-moz-animation: AnimationName 19s ease infinite;
+			animation: AnimationName 19s ease infinite;
+
+			@-webkit-keyframes AnimationName {
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
+			@-moz-keyframes AnimationName {
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
+			@keyframes AnimationName { 
+			    0%{background-position:48% 0%}
+			    50%{background-position:53% 100%}
+			    100%{background-position:48% 0%}
+			}
+		}
+
+		h2{
+			font-family: star-wars;
+			color: rgba(242,195,0,1);
+			font-size: 1000%;
+			position: absolute;
+    		top: 80px;
+    		left: 360px;
+    		z-index: 1;
+    		text-shadow: 1px 1px 2px #d1c592;
+
+		}
+
+		.tracking-in-contract-bck {
+			-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+			        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+			        font-family: star-wars;
+			color: rgba(242,195,0,1);
+
+			text-align: center;
+			position: absolute;
+    		top: -100px;
+    		left: 90px;
+    		z-index: 1;
+		}
+
+		@-webkit-keyframes tracking-in-contract-bck {
+		  0% {
+		    letter-spacing: 1em;
+		    -webkit-transform: translateZ(400px);
+		            transform: translateZ(400px);
+		    opacity: 0;
+		  }
+		  40% {
+		    opacity: 0.6;
+		  }
+		  100% {
+		    -webkit-transform: translateZ(0);
+		            transform: translateZ(0);
+		    opacity: 1;
+		  }
+		}
+		@keyframes tracking-in-contract-bck {
+		  0% {
+		    letter-spacing: 1em;
+		    -webkit-transform: translateZ(400px);
+		            transform: translateZ(400px);
+		    opacity: 0;
+		  }
+		  40% {
+		    opacity: 0.6;
+		  }
+		  100% {
+		    -webkit-transform: translateZ(0);
+		            transform: translateZ(0);
+		    opacity: 1;
+		  }
+		}
+
+		h1{
+			/*margin: 0 auto;*/
+			text-align: center;
+			color: white;
+		}
+
+		
+
+		canvas {
+			background-color: rgba(0,0,0,0);
+		}
+
+		#overlay{
+			background-color: rgba(0,0,0,0);
+		}
+
+
+
+	</style>
+
+	
+
+
+	<title></title>
+</head>
+<body>
+
+
+
+	<canvas id="our-canvas" height="400%" width="400%"></canvas>
+	<div class="tracking-in-contract-bck" id="overlay">
+		<h2>MY CANVAS</h2>
+	</div>
+	<!-- <button onclick="startLine()">Draw Line</button> -->
+
+<script type="text/javascript">
+		var canvas = document.querySelector('canvas');
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+		var index = 500;
+		var centerX = innerWidth/2;
+		var centerY = innerHeight/2;
+		var focalLength = 500; //the area where stars are coming from
+		var starRadius = null;
+		var starX = null;
+		var starY = null;
+		// var seeThru = getOpacityValue();
+		var c = canvas.getContext('2d'); // stands for context
+
+		// Arc/Circle
+			// var x = Math.random() *innerWidth;
+			// var y = Math.random() * innerHeight;
+			// var dx = Math.random() * 10;
+			// var dy = Math.random() * 10;
+			// var radius = 30;
+
+		function Circle(x,y,z,dx,dy,radius,seeThru) {
+			this.x = x;
+			this.y = y;
+			this.z = z;
+			this.dx = dx;
+			this.dy = dy;
+			this.radius = radius;
+			this.seeThru = seeThru;
+
+
+
+
+			this.draw = function(){
+				c.beginPath();
+				c.arc(starX,starY,starRadius, 0, Math.PI*2, false);
+				c.strokeStyle = 'white';
+				c.fillStyle = seeThru;
+				c.fill();
+				c.stroke();
+			}
+
+			//Animate Circles/stars
+			this.update = function(){
+				// if(this.x+this.radius > innerWidth) {
+				// 	this.dx = -this.dx;
+				// }
+
+				// if(this.x < this.radius) {
+				// 	this.dx = (-1 *this.dx);
+				// }
+
+				// if(this.y+this.radius > innerHeight) {
+				// 	this.dy = -this.dy;
+				// }
+				// if(this.y<=this.radius) {
+				// 	this.dy = -this.dy;
+				// }
+
+				this.x+=this.dx;
+				this.y+=this.dy;
+				starX = (this.x - centerX) * (focalLength /this.z);
+				starX += centerX;
+
+				starY = (this.y - centerY) * (focalLength / this.z);
+				starY += centerY;
+
+				
+				starRadius = radius * (focalLength / this.z); // circle to sphere, without it, stars will be flat
+
+				this.z += -.5; // rate of speed through space
+
+				if(this.z <=0) {
+					this.z = innerWidth;
+				}
+
+
+				this.draw();
+
+			}
+		}
+
+		var circleArray = [];
+
+		for(var i=0; i<1900; i++) {
+			var x = Math.random() * (innerWidth - radius * 5);
+			var y = Math.random() * (innerHeight - radius * 5);
+			var z = Math.random() * (innerWidth - radius * 5);
+			var dx = Math.random() - 0.5;
+			var dy = Math.random() - 0.5;
+			var seeThru = getOpacityValue();
+			var radius = 1;
+			circleArray.push(new Circle(x,y,z,dx,dy,radius,seeThru));
+			console.log(seeThru);
+		}
+
+
+		function animate(){
+			requestAnimationFrame(animate);
+			c.clearRect(0,0,innerWidth,innerHeight);
+
+			for(var i=0; i<circleArray.length; i++){
+				circleArray[i].update();
+			}
+
+		 }
+
+		 function getOpacityValue(){
+		 	var oValue= 'rgba(255,255,255,';
+		 	var opacityNums = [.8,.9,1];
+		 	oValue += opacityNums[Math.floor(Math.random()*3)];
+		 	oValue += ')';
+		 	return oValue;
+		 }
+		
+
+
+		animate();
+	</script>
+</body>
+</html>
