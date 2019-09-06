@@ -79,7 +79,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -96,7 +96,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -133,7 +133,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -169,7 +169,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -206,7 +206,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -242,7 +242,7 @@ $(document).ready(function() {
     url: "https://data.cityofnewyork.us/resource/i4gi-tjb9.json",
     type: "GET",
     data: {
-      "$limit" : 80000,
+      "$limit" : 9000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -278,7 +278,7 @@ $(document).ready(function() {
 	    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json",
 	    type: "GET",
 	    data: {
-	      "$limit" : 80000,
+	      "$limit" : 100000,
 	      "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
 	    }
 		}).done(function(data) {
@@ -317,7 +317,7 @@ $(document).ready(function() {
 
 	var queensCollege = [-73.816037,40.736340];
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdWE5OGRrZjAwYWc0ZW1teGkzNzY2N28ifQ.kqkrJ_pG1wZALwXlxOMdIQ';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdmU4YXd2NTAzdHo0NHFwMXE3dm05dmEifQ.FPP-0NTcmT19M-IuGSlFSQ';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',

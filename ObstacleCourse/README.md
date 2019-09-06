@@ -1,7 +1,8 @@
   
 # Obstacle Course Game
 Using the keyboard arrows, move the object on the screen to avoid obstacles appearing from the right side of the screen. The longer you go without hitting any of the obstacles the higher your score.
-
+## Play Here: 
+### https://JazmynFuller.github.io/ObstacleCourse/ObstacleCourse.html
 ##### Use Cases
 * Intrusctions to game pops up before interactive game starts
 	* Deeper explanation of what each arrow key does
