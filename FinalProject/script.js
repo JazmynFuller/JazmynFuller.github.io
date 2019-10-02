@@ -26,10 +26,10 @@ $(document).ready(function() {
 	var speed = 0;
 
 	$.ajax({
-    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json?$where=date between '2019-01-01T12:00:00' and '2019-05-30T14:00:00'",
+    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=date between '2019-01-01T12:00:00' and '2019-10-10T14:00:00'",
     type: "GET",
     data: {
-      "$limit" : 100000,
+      "$limit" : 2000000,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
@@ -317,7 +317,7 @@ $(document).ready(function() {
 
 	var queensCollege = [-73.816037,40.736340];
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNqdmU4YXd2NTAzdHo0NHFwMXE3dm05dmEifQ.FPP-0NTcmT19M-IuGSlFSQ';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNrMTlyang5ODA5cmYzYnBjdjlrYTRzeG0ifQ.dLYEoVRppfu4ere3uCaX6Q';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
