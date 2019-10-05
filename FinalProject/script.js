@@ -22,19 +22,21 @@ $(document).ready(function() {
 		}, 13000);
 	}
 	
-
+	var i = 0
 	var speed = 0;
+	var count = "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$select=count(*)"
 
 	$.ajax({
-    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=date between '2019-01-01T12:00:00' and '2019-10-10T14:00:00'",
+    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=date between '2019-01-01T12:00:00' and '2019-10-02T14:00:00'",
     type: "GET",
     data: {
-      "$limit" : 2000000,
+      "$limit" : 150000,
+      // '$offset': i,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
 	  var aData = [0,0,0,0,0];
-	  // alert("Retrieved " + data.length + " records from the dataset!");
+	  alert("Retrieved " + data.length+ " records from the dataset!");
 	  var totalAccidents = data.length;
 	  let bkAccidents = 0;
 	  let bXAccidents = 0;
@@ -71,6 +73,7 @@ $(document).ready(function() {
 	  // accidentPerBorough(Number(bkAccidents),Number(qAccidents),Number(mAccidents),Number(bXAccidents),Number(sAccidents));
 
 	});
+
 	
 
 
