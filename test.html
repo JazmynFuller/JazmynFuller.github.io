@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <input type="file" id="openFile"/>
+    <a id="export" download="export.csv" href="data:text/html,">Export</a>
+    <br>
+    <br>
+    <br>
+    <!-- preformatted text -->  
+    <pre id="fileContents">
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo
+    ojdaoj,feokokfe,dawff,efofewfo</pre>
+    <!--/preformatted text -->  
+
+    <!-- app.js -->
+    <script src="js/app.js">
+    	document.getElementById("export").addEventListener("click",function(){
+    let dataUri = 'data:text/html,' 
+        + encodeURIComponent(document.getElementById("fileContents").textContent);
+    this.href = dataUri;        
+},false)
+    	
+    </script>  
+  </body>
+</html>
+
