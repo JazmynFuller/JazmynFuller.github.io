@@ -24,19 +24,19 @@ $(document).ready(function() {
 	
 	var i = 0
 	var speed = 0;
-	var count = "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$select=count(*)"
-
 	$.ajax({
-    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=date between '2019-01-01T12:00:00' and '2019-10-02T14:00:00'",
+		// https://data.cityofnewyork.us/resource/h9gi-nx95.json
+    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=crash_date between '2019-01-01T12:00:00' and '2019-12-16T12:00:00'",
     type: "GET",
     data: {
-      "$limit" : 150000,
+      "$limit" : 1000000,
       // '$offset': i,
       "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
     }
 	}).done(function(data) {
 	  var aData = [0,0,0,0,0];
-	  alert("Retrieved " + data.length+ " records from the dataset!");
+	  console.log("Retrieved " + data.length+ " records from the dataset")
+	  // alert("Retrieved " + data.length+ " records from the dataset!");
 	  var totalAccidents = data.length;
 	  let bkAccidents = 0;
 	  let bXAccidents = 0;
@@ -277,14 +277,18 @@ $(document).ready(function() {
 	});
 
 
+
 	$.ajax({
-	    url: "https://data.cityofnewyork.us/resource/qiz3-axqb.json",
+	    // url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json",
+	    url: "https://data.cityofnewyork.us/resource/h9gi-nx95.json?$where=crash_date between '2019-01-01T12:00:00' and '2019-12-16T12:00:00'",
 	    type: "GET",
 	    data: {
-	      "$limit" : 100000,
+	      "$limit" : 1000000,
 	      "$$app_token" : "OconBNonoCLdDNrOPYIIBt5UA"
 	    }
 		}).done(function(data) {
+			// var testCount = data.length;
+			// alert('Persons hit on a bike: '+testCount)
 		   var personsInjured = 0, personsKilled = 0, cyclistsInjured = 0, cyclistsKilled =0, pedsInjured = 0, pedsKilled =0;
 		  // alert("Retrieved " + data.length + " records from the dataset!");
 		  console.log("accident count "+data[5]["number_of_persons_injured"]);
@@ -301,11 +305,11 @@ $(document).ready(function() {
 		  	if(Number(data[i]["number_of_pedestrians_killed"])>0) {
 		  		pedsKilled+=Number(data[i]["number_of_pedestrians_killed"]);
 		  	}
-		  	if(Number(data[i]["number_of_number_of_cyclist_injured"])>0) {
-		  		cyclistsInjured+=Number(data[i]["number_of_number_of_cyclist_injured"]);
+		  	if(Number(data[i]["number_of_cyclist_injured"])>0) {
+		  		cyclistsInjured+=Number(data[i]["number_of_cyclist_injured"]);
 		  	}
-		  	if(Number(data[i]["number_of_number_of_cyclist_killed"])>0) {
-		  		cyclistsKilled+=Number(data[i]["number_of_number_of_cyclist_killed"]);
+		  	if(Number(data[i]["number_of_cyclist_killed"])>0) {
+		  		cyclistsKilled+=Number(data[i]["number_of_cyclist_killed"]);
 		  	} else continue;
 		  }
 		  // console.log("Amount of people injured "+personsInjured);
@@ -320,7 +324,7 @@ $(document).ready(function() {
 
 	var queensCollege = [-73.816037,40.736340];
 
-	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNrMTlyang5ODA5cmYzYnBjdjlrYTRzeG0ifQ.dLYEoVRppfu4ere3uCaX6Q';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiamF6bXluZnVsbGVyIiwiYSI6ImNrM3RvYTM5NzA1MXczbXBtMnQ2OW5pbnQifQ.8Mq66BB9PALT4N-g4mg_6A';
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v9',
