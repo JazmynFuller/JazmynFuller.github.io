@@ -99,33 +99,33 @@ var seen = [] ,quotes = [
 	'\"Don’t look any further than your own reflection for a hero\"', // 98
 	'\"Loving yourself isn’t vanity. It’s sanity.\"', // 99
 	'\"Most people say that it is the intellect which makes a great scientist. They are wrong: it is character.\"', // 100
-	// '\"\"', // 101
-	// '\"\"', // 102
-	// '\"\"', // 103
-	// '\"\"', // 104
-	// '\"\"', // 105
-	// '\"\"', // 106
-	// '\"\"', // 107
-	// '\"\"', // 108
-	// '\"\"', // 109
-	// '\"\"', // 110	
-	// '\"\"', // 110
-	// '\"\"', // 111
-	// '\"\"', // 112
-	// '\"\"', // 113
-	// '\"\"', // 114
-	// '\"\"', // 115
-	// '\"\"', // 116
-	// '\"\"', // 117
-	// '\"\"', // 118
-	// '\"\"', // 119
-	// '\"\"', // 120	
-	// '\"\"', // 120
-	// '\"\"', // 121
-	// '\"\"', // 122
-	// '\"\"', // 123
-	// '\"\"', // 124
-	// '\"\"', // 125
+	'\"We spend so much time being afraid of failure, afraid of rejection. But regret is the thing we should fear most. Failure is an answer. Rejection is an answer. Regret is an eternal question you will never have the answer to.\"', // 101
+	'\"The most important thing is to try and inspire people so that they can be great at whatever they want to do.\"', // 102
+	'\"You have to know what sparks the light in you so that you, in your own way, can illuminate the world.\"', // 103
+	'\"You can\'t base your life on other people\'s expectations.\"', // 104
+	'\"I can accept failure. Everyone fails at something. But I can\'t accept not trying.\"', // 105
+	'\"Imagine what a harmonious world could be if every single person, both young and old, shared a little of what he is good at.\"', // 106
+	'\"The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.\"', // 107
+	'\"Change will not come if we wait for some other person or if we wait for some time. We are the ones we\'ve been waiting for.\"', // 108
+	'\"Don\'t count the days, make the days count.\"', // 109
+	'\"Stumbling is not falling.\"', // 110	
+	'\"You don\'t make progress by standing on the sidelines, whimpering and complaining. You make progress by implementing ideas.\"', // 110
+	'\"Character, not circumstances, makes the man\"', // 111
+	'\"When you do the common things in life in an uncommon way, you will command the attention of the world.\"', // 112
+	'\"The world is before you and you need not take it or leave it as it was when you came in.\"', // 113
+	'\"If there\'s a book you want to read, but it hasn\'t been written yet, then you must write it.\"', // 114
+	'\"Each of you, as an individual, must pick your own goals. Listen to others, but do not become a blind follower.\"', // 115
+	'\"I think people who have faults are a lot more interesting than people who are perfect.\"', // 116
+	'\"The most courageous act is to still think for yourself. Aloud.\"', // 117
+	'\"I alone cannot change the world, but I can cast a stone across the water to create many ripples.\"', // 118
+	'\"Make the most of yourself by fanning the tiny, inner sparks of possibility into flames of achievement.\"', // 119
+	'\"I didn’t get there by wishing for it or hoping for it, but by working for it.\"', // 120	
+	'\"If you don’t like the road you’re walking, start paving another one.\"', // 120
+	'\"You can waste your lives drawing lines. Or you can live your life crossing them.\"', // 121
+	'\"Believe you can and you’re halfway there.\"', // 122
+	'\"I’m not good at everything, I just do my best at everything.\"', // 123
+	'\"Day told her sister, "When you are darkest is when you are most beautiful. It is when you are most you.\"', // 124
+	'\"Greatness is not this wonderful, esoteric, elusive, god-like feature that only the special among us will ever taste, it’s something that truly exists in all of us.\"', // 125
 	// '\"\"', // 126
 	// '\"\"', // 127
 	// '\"\"', // 128
@@ -150,8 +150,8 @@ var seen = [] ,quotes = [
 	// '\"\"', // 147
 	// '\"\"', // 148
 	// '\"\"', // 149
-	// '\"\"', // 150	
-	// '- ', // 151
+	'\"Learn from your past and be better because of your past,” she would say, “but don’t cry about your past. Life is full of pain. Let the pain sharpen you, but don’t hold on to it. Don’t be bitter.\"', // 150	
+	'\"Step out of the history that is holding you back. Step into the new story you are willing to create.\"', // 151
 	// '- ', // 152
 	// '- ', // 153
 	// '- ', // 154
@@ -474,33 +474,33 @@ var seen = [] ,quotes = [
 	'- Allyson Partridge', // 98
 	'- Andre Gide', // 99
 	'- Albert Einstein', // 100
-	// '- ', // 101
-	// '- ', // 102
-	// '- ', // 103
-	// '- ', // 104
-	// '- ', // 105
-	// '- ', // 106
-	// '- ', // 107
-	// '- ', // 108
-	// '- ', // 109
-	// '- ', // 110	
-	// '- ', // 110
-	// '- ', // 111
-	// '- ', // 112
-	// '- ', // 113
-	// '- ', // 114
-	// '- ', // 115
-	// '- ', // 116
-	// '- ', // 117
-	// '- ', // 118
-	// '- ', // 119
-	// '- ', // 120	
-	// '- ', // 120
-	// '- ', // 121
-	// '- ', // 122
-	// '- ', // 123
-	// '- ', // 124
-	// '- ', // 125
+	'- Trevor Noah ', // 101
+	'- Kobe Bryant', // 102
+	'- Oprah Winfrey', // 103
+	'- Stevie Wonder', // 104
+	'- Michael Jordan', // 105
+	'- Quincy Jones', // 106
+	'- Martin Luther King, Jr.', // 107
+	'- Barack Obama', // 108
+	'- Muhammad Ali', // 109
+	'- Malcolm X', // 110	
+	'- Shirley Chisholm', // 110
+	'- Booker T. Washington', // 111
+	'- George Washington Carver', // 112
+	'- James Baldwin', // 113
+	'- Toni Morrison', // 114
+	'- Thurgood Marshall', // 115
+	'- Spike Lee', // 116
+	'- Coco Chanel', // 117
+	'- Mother Teresa', // 118
+	'- Golda Meir', // 119
+	'- Estée Lauder', // 120	
+	'- Dolly Parton', // 120
+	'- Shonda Rhimes', // 121
+	'- Theodore Roosevelt', // 122
+	'- Michael B. Jordan', // 123
+	'- Lupita Nyong\'o', // 124
+	'- Will Smith', // 125
 	// '- ', // 126
 	// '- ', // 127
 	// '- ', // 128
@@ -525,8 +525,8 @@ var seen = [] ,quotes = [
 	// '- ', // 147
 	// '- ', // 148
 	// '- ', // 149
-	// '- ', // 150	
-	// '- ', // 151
+	'- Trevor Noah', // 150	
+	'- Oprah Winfrey', // 151
 	// '- ', // 152
 	// '- ', // 153
 	// '- ', // 154
