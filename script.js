@@ -125,7 +125,7 @@ var seen = [] ,quotes = [
 	'\"Believe you can and you’re halfway there.\"', // 122
 	'\"I’m not good at everything, I just do my best at everything.\"', // 123
 	'\"Day told her sister, "When you are darkest is when you are most beautiful. It is when you are most you.\"', // 124
-	'\"Greatness is not this wonderful, esoteric, elusive, god-like feature that only the special among us will ever taste, it’s something that truly exists in all of us.\"', // 125
+	'\"\"', // 125
 	// '\"\"', // 126
 	// '\"\"', // 127
 	// '\"\"', // 128
