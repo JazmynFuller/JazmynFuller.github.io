@@ -5,6 +5,12 @@
     transition: all .2s;
 }
 
+#mainNav .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5b7a49 !important;
+}
+
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
     background-color: transparent;
     color: #5b7a49 !important;
