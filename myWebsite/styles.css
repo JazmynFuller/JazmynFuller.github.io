@@ -1,0 +1,37 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+.hero {
+    padding: 0 !important; 
+}
+
+.masthead {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+
+.brand-heading {
+	margin-top: 12%;
+	margin-left: 2%;
+	color: rgba(255,255,255,.85);
+	font-size: 700%;
+	letter-spacing: .15em;
+}
+
+.intro-body {
+	padding: 15% 0;
+}
+
+@media screen and (max-width: 420px) {
+	.icons {
+		margin: 15% 0;
+	}
+	#encouraging-verse {
+		margin: 0 2%;
+	}
+	.brand-heading {
+		font-size: 400%;
+		margin-top: 25%;
+		text-align: center;
+	}
+}

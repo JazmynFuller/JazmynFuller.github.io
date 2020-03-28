@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2146240a2e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	<title>Daily Spiritual Encouragments</title>
+</head>
+
+<body class="" id="page-top">
+    <div class="container">
+    	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #d57a42;">
+           <a class="navbar-brand" href="#">LHCC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link js-scroll-trigger" href="#vod">Verse of the Day</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link js-scroll-trigger" href="#boost">Spiritual Boost</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </div>
+
+   <header class="masthead" style="background-image:url('imgs/3162889776388575_IMG_3669.jpg'); height: 100vh;">
+        <div class="">
+            <!-- <div class="container"> -->
+            <div class="row justify-content-left">
+                <div class="col-lg-12">
+                    <h1 class="brand-heading">Hello Jazmyn!</h1>
+                 </div> 
+            </div>
+                <!-- <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <p class="intro-text">BRAVOSEIS<br /></p>
+                        <a class="btn btn-link btn-circle" role="button" href="#projects-section" style="scroll-behavior:  smooth !important;">
+                                <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </header>
+
+
+    <div class="container intro-body" id="about">
+        <div class="row justify-content-center projects">
+            <div class="col-lg-12">
+                <h3 style="text-align: center; font-size: 320%;">About Me</h3>
+                <p style="text-align: center; margin: 0 15%; font-size: 120%; margin-top:5%;">My name is Jazmyn and I am 23 year old recent college graduate. I currently teach piano to students children aged 5-16, and code websites for people on the side. In my free time I enjoy baking, travelling, and gaming.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin: 0 15%; margin-top: 15%; text-align: center;">
+            <div class="col-lg-4 icons">
+                <i class="fas fa-mitten fa-6x" style="color: #93b74c;"></i>
+            </div>
+            <div class="col-lg-4 icons">
+                <i class="fas fa-plane-departure fa-6x" style="color: #93b74c;"></i>
+            </div>
+            <div class="col-lg-4 icons">
+                <i class="fas fa-gamepad fa-6x" style="color: #93b74c;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container intro-body" id="vod">
+        <div class="row justify-content-center projects">
+            <div class="col-lg-12">
+                <h3 style="text-align: center; font-size: 320%;">Verse of the Day</h3>
+                <h6 style="text-align: center; margin: 4% 0; color: #8a6438;">
+                    <i class="fas fa-bible fa-6x icons" style="text-align: center;"></i>
+                </h6>
+                <p id="verse-of-the-day"style="text-align: center; margin: 0 15%; font-size: 160%;">Today's verse and reference</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container intro-body" id="boost">
+        <div class="row justify-content-center projects">
+            <div class="col-lg-12">
+               <h3 style="text-align: center; font-size: 320%;">How are you feeling today?</h3> 
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin: 0 15%; margin-top: 5%; text-align: center;">
+            <div class="col-lg-4 col-sm-12">
+               <a onclick="feelingGood()"><i class="far fa-laugh-beam fa-6x icons" style="color: #f2be13"></i></a>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a onclick="feelingMeh()"><i class="far fa-meh-rolling-eyes fa-6x icons" style="color: #626d73;"></i></a>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a onclick="feelingSad()"><i class="far fa-frown fa-6x icons" style="color: #030b73;"></i></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <h6 id="encouraging-verse" style="text-align: center; font-size: 220%; color: red; margin-top: 5%; background-color: rgba(213,122,66,.15); padding: 2%;"></h6>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #d57a42; padding: 8% 0;">
+        <h3 style="text-align: center; color: rgba(0,0,0,.65);">Don't forget to pray!</h3>
+        <div class="row justify-content-center" style="text-align: center;">
+            <div class="col-lg-12">
+              <i class="fas fa-praying-hands fa-4x" style="margin-top: 2%; color: rgba(0,0,0,.65);"></i>  
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript" src="my-script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
