@@ -48,6 +48,7 @@ function feelingGood(){
 	happy[3] = "Spiritual Reminder: <strong>Esphesians 4:28</strong><br><br>\"Let the thief no longer steal, but rather let him labor, doing honest work with his own hands, so that he may have something to share with anyone in need.\"";
 	happy[4] = "Spiritual Reminder: <strong>Mark 16:15</strong><br><br>\"And he said to them, “Go into all the world and proclaim the gospel to the whole creation.\"";
 	console.log(randomNumber);
+	document.getElementById('encouraging-verse').style.backgroundColor = 'rgba(213,122,66,.15)'
 	document.getElementById('encouraging-verse').innerHTML = happy[randomNumber];
 	// alert("Hello Happy Guy!")
 
@@ -61,6 +62,7 @@ function feelingMeh(){
 	meh[2] = "Spiritual Vitamin: <strong>2 Timothy 1:7</strong><br><br>\"For God gave us a spirit not of fear but of power and love and self-control.\"";
 	meh[3] = "Spiritual Vitamin: <strong>Psalm 27:14</strong><br><br>\"Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!\"";
 	meh[4] = "Spiritual Vitamin: <strong>Psalm 112:7</strong><br><br>\"He is not afraid of bad news; his heart is firm, trusting in the Lord.\"";
+	document.getElementById('encouraging-verse').style.backgroundColor = 'rgba(213,122,66,.15)'
 	document.getElementById('encouraging-verse').innerHTML = meh[randomNumber];
 	// alert("Hello Meh Guy!")
 }
@@ -73,6 +75,7 @@ function feelingSad(){
 	sad[2] = "Spiritual Medicine: <strong>1 Peter 5:6-7</strong><br><br>\"Humble yourselves, therefore, under God’s mighty hand, that he may lift you up in due time. 7 Cast all your anxiety on him because he cares for you.\"";
 	sad[3] = "Spiritual Medicine: <strong>Isaiah 41:10</strong><br><br>\"So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.\"";
 	sad[4] = "Spiritual Medicine: <strong>Romans 8:38-39</strong><br><br>\"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord.\"";
+	document.getElementById('encouraging-verse').style.backgroundColor = 'rgba(213,122,66,.15)'
 	document.getElementById('encouraging-verse').innerHTML = sad[randomNumber];
 	// alert("Hello Sad Guy!")
 }
