@@ -1,6 +1,10 @@
+html, body {
+    width: auto !important; 
+    /*overflow-x: hidden !important;*/
+} 
+
 #mainNav {
-    border-bottom: 1px solid rgba(33,37,41,.1);
-    background-color: #000;
+    border-bottom: 2px solid rgba(33,37,41,.1);
     color: #5b7a49 !important;
     transition: all .2s;
 }
@@ -8,7 +12,7 @@
 #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #5b7a49 !important;
+    color: white !important;
 }
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
@@ -21,20 +25,79 @@
     background-color: transparent;
 }
 
+.member-group {
+    padding: 5% 0;
+}
+
+header {
+    background-position: 50% 50%;
+}
+
+.btn-circle {
+  font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    transition: background .3s ease-in-out;
+    color: #fff;
+    border: 2px solid #fff;
+    scroll-behavior:  smooth !important;
+    border-radius: 100%!important;
+    background: transparent;
+}
 
 .green-btns{
 	background-color: #5b7a49;
 	color: #fff;
 }
 
+
+#animated-bg {
+    background: linear-gradient(30deg, #0bb6bc, #9fbbbc, #5b7a49);
+    background-size: 600% 600%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+}
+
+    @-webkit-keyframes Gradient {
+        0%{ background-position: 0% 50%; }
+        50%{ background-position: 100% 50%; }
+        100%{ background-position: 0% 50%; }
+    }
+  
+    @-moz-keyframes Gradient {
+        0%{ background-position: 0% 50%; }
+        50%{ background-position: 100% 50%; }
+        100%{ background-position: 0% 50%; }
+    }
+  
+    @keyframes Gradient {
+        0%{ background-position: 0% 50%; }
+        50%{ background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+
 .btn-primary {
 	border-color: #5b7a49 !important;
 }
 
 
+.member {
+    margin: 10% 0;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+
 
 #about {
-	background-color: #5b7a49 !important;
+	background-color: #fff !important;
+    color: #000 !important;
 }
 
 #board-members{
@@ -42,7 +105,11 @@
 }
 
 .text-primary {
-    color: #5b7a49 !important;
+    color: #edb009 !important;
+}
+
+#title-text {
+    font-size: 900% !important;
 }
 
 
@@ -61,4 +128,7 @@
 	#mainNav.navbar-shrink .navbar-brand, #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     	color: #5b7a49 ;
 	}
+
+
+    }
 }
