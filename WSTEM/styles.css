@@ -112,6 +112,11 @@ section {
     font-size: 900% !important;
 }
 
+.info-text {
+        margin: 0 2%;
+    }
+
+
 
 @media (min-width: 992px){
 	#mainNav .navbar-brand {
