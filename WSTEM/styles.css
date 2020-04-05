@@ -29,6 +29,8 @@ html, body {
     padding: 5% 0;
 }
 
+
+
 header {
     background-position: 50% 50%;
 }
@@ -79,6 +81,9 @@ header {
         100% { background-position: 0% 50%; }
     }
 
+.mini-icons {
+    margin: 5% 0;
+}
 
 .btn-primary {
 	border-color: #5b7a49 !important;
@@ -91,6 +96,13 @@ header {
 
 section {
     padding: 3rem 0;
+}
+
+
+.carousel-inner  {
+    margin: 0 auto;
+    width: 40%;
+    height: 150%;
 }
 
 
@@ -116,6 +128,18 @@ section {
         margin: 0 2%;
     }
 
+@media(max-width: 800px) {
+    .our-history {
+        padding-bottom: 50% !important;
+    }
+    .gallery-title {
+        padding-top: 45% !important;
+    }
+    .carousel-inner  {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
 
 
 @media (min-width: 992px){
@@ -134,6 +158,14 @@ section {
     	color: #5b7a49 ;
 	}
 
+    #our-mission {
+        padding-top: 10% !important;
+    }
 
+    .our-history {
+        padding-bottom: 35% !important;
     }
 }
+
+
+
