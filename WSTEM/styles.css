@@ -22,7 +22,8 @@
         THE SOFTWARE.*/ 
 html, body {
     width: auto !important; 
-    /*overflow-x: hidden !important;*/
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 } 
 
 #mainNav {
@@ -186,6 +187,9 @@ section {
 
     .our-history {
         padding-bottom: 35% !important;
+    }
+    .o-h {
+        margin: 5% 0 !important; 
     }
 }
 
