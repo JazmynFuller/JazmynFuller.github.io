@@ -78,31 +78,14 @@ header {
 }
 
 
-#animated-bg {
-    background: linear-gradient(30deg, #0bb6bc, #9fbbbc, #5b7a49);
-    background-size: 600% 600%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite;
+footer {
+    padding: 3% 0;
 }
 
-    @-webkit-keyframes Gradient {
-        0%{ background-position: 0% 50%; }
-        50%{ background-position: 100% 50%; }
-        100%{ background-position: 0% 50%; }
-    }
-  
-    @-moz-keyframes Gradient {
-        0%{ background-position: 0% 50%; }
-        50%{ background-position: 100% 50%; }
-        100%{ background-position: 0% 50%; }
-    }
-  
-    @keyframes Gradient {
-        0%{ background-position: 0% 50%; }
-        50%{ background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
+#thank-yous {
+    font-size: 90%;
+    margin-top: 3%;
+}
 
 .mini-icons {
     margin: 5% 0;
@@ -161,6 +144,10 @@ section {
     .carousel-inner  {
         margin: 0 auto;
         width: 70%;
+    }
+    #thank-yous {
+        font-size: 50%;
+        margin-top: 3%;
     }
 }
 
