@@ -141,7 +141,7 @@ section {
         margin: 0 2%;
     }
 
-@media(max-width: 800px) {
+@media(max-width: 840px) {
     /*.our-history {
         padding-bottom: 50% !important;
     }*/
@@ -151,6 +151,9 @@ section {
     .carousel-inner  {
         margin: 0 auto;
         width: 70%;
+    }
+    #crew-heading {
+        margin-top: 15% !important;
     }
     #thank-yous {
         font-size: 50%;
@@ -167,6 +170,9 @@ section {
     }
     #crew-heading {
         margin-top: 25%;
+    }
+    .our-history {
+        margin-bottom: 22% !important;
     }
 }
 
@@ -189,10 +195,10 @@ section {
     #our-mission {
         padding-top: 10% !important;
     }
-
     .our-history {
-        padding-bottom: 22% !important;
+        margin-bottom: 15%;
     }
+    
 
     
 }
