@@ -165,6 +165,9 @@ section {
     .o-h{
         margin-top: 25%;
     }
+    #crew-heading {
+        margin-top: 25%;
+    }
 }
 
 @media (min-width: 992px){
