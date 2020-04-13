@@ -95,6 +95,10 @@ footer {
 	border-color: #5b7a49 !important;
 }
 
+.section-heading {
+    font-size: 400%;
+}
+
 
 .member {
     margin: 10% 0;
@@ -151,6 +155,11 @@ section {
     }
 }
 
+@media (max-width: 500px) {
+    .section-heading {
+        font-size: 220%;
+    }
+}
 
 @media (min-width: 992px){
 	#mainNav .navbar-brand {
