@@ -143,9 +143,9 @@ section {
     }
 
 @media(max-width: 800px) {
-    .our-history {
+    /*.our-history {
         padding-bottom: 50% !important;
-    }
+    }*/
     .gallery-title {
         padding-top: 45% !important;
     }
