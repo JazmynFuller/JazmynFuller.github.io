@@ -119,15 +119,14 @@ section {
     height: 150%;
 }
 
+#hist-row{
+    padding-bottom: 15%;
+}
 
 
 #about {
 	background-color: #fff !important;
     color: #000 !important;
-}
-
-#board-members{
-	/*margin-top: 5%;*/
 }
 
 .text-primary {
@@ -163,6 +162,9 @@ section {
     .section-heading {
         font-size: 220%;
     }
+    .o-h{
+        margin-top: 25%;
+    }
 }
 
 @media (min-width: 992px){
@@ -189,9 +191,7 @@ section {
         padding-bottom: 22% !important;
     }
 
-    .o-h {
-        margin: 5% 0 !important; 
-    }
+    
 }
 
 
