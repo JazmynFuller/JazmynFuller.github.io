@@ -125,8 +125,8 @@ var seen = [] ,quotes = [
 	'\"Believe you can and you’re halfway there.\"', // 122
 	'\"I’m not good at everything, I just do my best at everything.\"', // 123
 	'\"Day told her sister, "When you are darkest is when you are most beautiful. It is when you are most you.\"', // 124
-	'\"\"', // 125
-	// '\"\"', // 126
+	'\"Stop letting people who do so little for you control so much of your mind, feelings and emotions.\"', // 125
+	'\"Be on your guard; stand firm in the faith; be courageous; be strong.\"', // 126
 	// '\"\"', // 127
 	// '\"\"', // 128
 	// '\"\"', // 129
@@ -135,17 +135,17 @@ var seen = [] ,quotes = [
 	// '\"\"', // 132
 	// '\"\"', // 133
 	// '\"\"', // 134
-	// '\"\"', // 135
+	'\"Now faith is the assurance of things hoped for, the conviction of things not seen.\"', // 135
 	// '\"\"', // 136
 	// '\"\"', // 137
 	// '\"\"', // 138
 	// '\"\"', // 139
-	// '\"\"', // 140	
+	'\"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, 3 because you know that the testing of your faith produces perseverance. 4 Let perseverance finish its work so that you may be mature and complete, not lacking anything.\"', // 140	
 	// '\"\"', // 141
 	// '\"\"', // 142
 	// '\"\"', // 143
 	// '\"\"', // 144
-	// '\"\"', // 145
+	'\"Two are better than one ... for if they fall, one will lift up the other.\"', // 145
 	// '\"\"', // 146
 	// '\"\"', // 147
 	// '\"\"', // 148
@@ -175,7 +175,7 @@ var seen = [] ,quotes = [
 	// '- ', // 172
 	// '- ', // 173
 	// '- ', // 174
-	// '- ', // 175
+	'- Let love be genuine. Abhor what is evil; hold fast to what is good.', // 175
 	// '- ', // 176
 	// '- ', // 177
 	// '- ', // 178
@@ -501,7 +501,7 @@ var seen = [] ,quotes = [
 	'- Michael B. Jordan', // 123
 	'- Lupita Nyong\'o', // 124
 	'- Will Smith', // 125
-	// '- ', // 126
+	'- 1 Corinthians 16:13', // 126
 	// '- ', // 127
 	// '- ', // 128
 	// '- ', // 129
@@ -510,17 +510,17 @@ var seen = [] ,quotes = [
 	// '- ', // 132
 	// '- ', // 133
 	// '- ', // 134
-	// '- ', // 135
+	'- Hebrews 11:1', // 135
 	// '- ', // 136
 	// '- ', // 137
 	// '- ', // 138
 	// '- ', // 139
-	// '- ', // 140	
+	'- James 1:2-4', // 140	
 	// '- ', // 141
 	// '- ', // 142
 	// '- ', // 143
 	// '- ', // 144
-	// '- ', // 145
+	'- Ecclesiastes 4:9-10', // 145
 	// '- ', // 146
 	// '- ', // 147
 	// '- ', // 148
@@ -550,7 +550,7 @@ var seen = [] ,quotes = [
 	// '- ', // 172
 	// '- ', // 173
 	// '- ', // 174
-	// '- ', // 175
+	'- Romans 12:9', // 175
 	// '- ', // 176
 	// '- ', // 177
 	// '- ', // 178
