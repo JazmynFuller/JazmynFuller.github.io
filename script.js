@@ -143,11 +143,11 @@ var seen = [] ,quotes = [
 	'\"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, 3 because you know that the testing of your faith produces perseverance. 4 Let perseverance finish its work so that you may be mature and complete, not lacking anything.\"', // 140	
 	// '\"\"', // 141
 	// '\"\"', // 142
-	// '\"\"', // 143
+	'\"...a society without jaywalkers might indicate a society without artists.\"', // 143
 	// '\"\"', // 144
 	'\"Two are better than one ... for if they fall, one will lift up the other.\"', // 145
-	// '\"\"', // 146
-	// '\"\"', // 147
+	'\"It is not power that corrupts but fear.\"', // 146
+	'\"It\'s is important to draw wisdom from many different places.\"', // 147
 	// '\"\"', // 148
 	// '\"\"', // 149
 	'\"Learn from your past and be better because of your past,” she would say, “but don’t cry about your past. Life is full of pain. Let the pain sharpen you, but don’t hold on to it. Don’t be bitter.\"', // 150	
@@ -521,10 +521,10 @@ var seen = [] ,quotes = [
 	// '- ', // 143
 	// '- ', // 144
 	'- Ecclesiastes 4:9-10', // 145
-	// '- ', // 146
-	// '- ', // 147
+	'- Paul Theroux', // 146
+	'- Uncle Iroh (Avatar the Last Airbender)', // 147
 	// '- ', // 148
-	// '- ', // 149
+	'- Aung San Suu Kyi ', // 149
 	'- Trevor Noah', // 150	
 	'- Oprah Winfrey', // 151
 	// '- ', // 152
