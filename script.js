@@ -1,4 +1,4 @@
-var seen = [] ,quotes = [
+var quotes = [
 	'\"Never be limited by other people’s limited imaginations.\"', // 1
 	'\"I refuse to accept the view that mankind is so tragically bound to the starless midnight of racism and war that the bright daybreak of peace and brotherhood can never become a reality…. I believe that unarmed truth and unconditional love will have the final word.\"',  // 2
 	'\"In recognizing the humanity of our fellow beings, we pay ourselves the highest tribute.\"', // 3
@@ -127,29 +127,29 @@ var seen = [] ,quotes = [
 	'\"Day told her sister, "When you are darkest is when you are most beautiful. It is when you are most you.\"', // 124
 	'\"Stop letting people who do so little for you control so much of your mind, feelings and emotions.\"', // 125
 	'\"Be on your guard; stand firm in the faith; be courageous; be strong.\"', // 126
-	// '\"\"', // 127
-	// '\"\"', // 128
-	// '\"\"', // 129
-	// '\"\"', // 130	
-	// '\"\"', // 131
-	// '\"\"', // 132
-	// '\"\"', // 133
-	// '\"\"', // 134
+	'\"\"', // 127
+	'\"\"', // 128
+	'\"\"', // 129
+	'\"\"', // 130	
+	'\"\"', // 131
+	'\"\"', // 132
+	'\"\"', // 133
+	'\"\"', // 134
 	'\"Now faith is the assurance of things hoped for, the conviction of things not seen.\"', // 135
-	// '\"\"', // 136
-	// '\"\"', // 137
-	// '\"\"', // 138
-	// '\"\"', // 139
+	'\"\"', // 136
+	'\"\"', // 137
+	'\"\"', // 138
+	'\"\"', // 139
 	'\"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, 3 because you know that the testing of your faith produces perseverance. 4 Let perseverance finish its work so that you may be mature and complete, not lacking anything.\"', // 140	
-	// '\"\"', // 141
-	// '\"\"', // 142
+	'\"\"', // 141
+	'\"\"', // 142
 	'\"...a society without jaywalkers might indicate a society without artists.\"', // 143
-	// '\"\"', // 144
+	'\"\"', // 144
 	'\"Two are better than one ... for if they fall, one will lift up the other.\"', // 145
 	'\"It is not power that corrupts but fear.\"', // 146
 	'\"It\'s is important to draw wisdom from many different places.\"', // 147
-	'\""You don\'t need a silver fork to eat good food."\"', // 148
-	// '\"\"', // 149
+	'\"You don\'t need a silver fork to eat good food.\"', // 148
+	'\"\"', // 149
 	'\"Learn from your past and be better because of your past,” she would say, “but don’t cry about your past. Life is full of pain. Let the pain sharpen you, but don’t hold on to it. Don’t be bitter.\"', // 150	
 	'\"Step out of the history that is holding you back. Step into the new story you are willing to create.\"', // 151
 	// '- ', // 152
@@ -164,8 +164,8 @@ var seen = [] ,quotes = [
 	// '- ', // 161
 	// '- ', // 162
 	// '- ', // 163
-	// '- ', // 164
-	// '- ', // 165
+	// '-\"\" ', // 164
+	'\"To eat is a necessity, but to eat intelligently is an art.\"', // 165
 	// '- ', // 166
 	// '- ', // 167
 	// '- ', // 168
@@ -502,24 +502,24 @@ var seen = [] ,quotes = [
 	'- Lupita Nyong\'o', // 124
 	'- Will Smith', // 125
 	'- 1 Corinthians 16:13', // 126
-	// '- ', // 127
-	// '- ', // 128
-	// '- ', // 129
-	// '- ', // 130	
-	// '- ', // 131
-	// '- ', // 132
-	// '- ', // 133
-	// '- ', // 134
+	'- ', // 127
+	'- ', // 128
+	'- ', // 129
+	'- ', // 130	
+	'- ', // 131
+	'- ', // 132
+	'- ', // 133
+	'- ', // 134
 	'- Hebrews 11:1', // 135
-	// '- ', // 136
-	// '- ', // 137
-	// '- ', // 138
-	// '- ', // 139
+	'- ', // 136
+	'- ', // 137
+	'- ', // 138
+	'- ', // 139
 	'- James 1:2-4', // 140	
-	// '- ', // 141
-	// '- ', // 142
-	// '- ', // 143
-	// '- ', // 144
+	'- ', // 141
+	'- ', // 142
+	'- ', // 143
+	'- ', // 144
 	'- Ecclesiastes 4:9-10', // 145
 	'- Paul Theroux', // 146
 	'- Uncle Iroh (Avatar the Last Airbender)', // 147
@@ -540,7 +540,7 @@ var seen = [] ,quotes = [
 	// '- ', // 162
 	// '- ', // 163
 	// '- ', // 164
-	// '- ', // 165
+	'- François de la Rochefoucauld ', // 165
 	// '- ', // 166
 	// '- ', // 167
 	// '- ', // 168
@@ -750,9 +750,9 @@ var seen = [] ,quotes = [
 
 var now = new Date();
 var start = new Date(now.getFullYear(), 0, 0);
-var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+var diff = (now - start);
 var oneDay = 1000 * 60 * 60 * 24;
-var day = Math.floor(diff / oneDay) - 1;
+var day = Math.floor(diff / oneDay)-1;
 console.log('Day of year: ' + day);
 
 newQuote();
@@ -761,6 +761,7 @@ function newQuote() {
 	// seenAlready(randomNumber);
 
 	element = document.getElementById('quote-display').innerHTML = quotes[day];
+	console.log(quotes[141]);
 	author_element = document.getElementById('quote-author').innerHTML = person[day];
 	// var inst = setInterval(newQuote, 86400000);
 }
