@@ -163,8 +163,8 @@ var quotes = [
 	'- ', // 160	
 	'- ', // 161
 	'- ', // 162
-	'- ', // 163
-	'-\"We may encounter defeats, but we must not be defeated.\" ', // 164
+	'-\"We may encounter defeats, but we must not be defeated.\" ', // 163
+	'-\"Work to become, not to acquire.\" ', // 164
 	'\"To eat is a necessity, but to eat intelligently is an art.\"', // 165
 	'- ', // 166
 	'- ', // 167
@@ -538,8 +538,8 @@ var quotes = [
 	'- ', // 160	
 	'- ', // 161
 	'- ', // 162
-	'- ', // 163
-	'- Maya Angelou', // 164
+	'- Maya Angelou', // 163
+	'- Elbert Hubbard', // 164
 	'- François de la Rochefoucauld ', // 165
 	'- ', // 166
 	'- ', // 167
