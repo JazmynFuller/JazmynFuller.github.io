@@ -164,7 +164,7 @@ var quotes = [
 	'- ', // 161
 	'- ', // 162
 	'- ', // 163
-	'-\"\" ', // 164
+	'-\"We may encounter defeats, but we must not be defeated.\" ', // 164
 	'\"To eat is a necessity, but to eat intelligently is an art.\"', // 165
 	'- ', // 166
 	'- ', // 167
@@ -539,7 +539,7 @@ var quotes = [
 	'- ', // 161
 	'- ', // 162
 	'- ', // 163
-	'- ', // 164
+	'- Maya Angelou', // 164
 	'- François de la Rochefoucauld ', // 165
 	'- ', // 166
 	'- ', // 167
@@ -761,7 +761,7 @@ function newQuote() {
 	// seenAlready(randomNumber);
 
 	element = document.getElementById('quote-display').innerHTML = quotes[day];
-	console.log(quotes[141]);
+	console.log(quotes[164]);
 	author_element = document.getElementById('quote-author').innerHTML = person[day];
 	// var inst = setInterval(newQuote, 86400000);
 }
