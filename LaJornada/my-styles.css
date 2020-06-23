@@ -60,7 +60,17 @@
   background-color: rgba(0,0,0,.5);
   width: 70%;
 }
-#food{
+#food, #ministries{
   background-color: #fff;
   z-index: -5;
+}
+
+#schedule {
+  background-color: rgb(31, 33, 32);
+  z-index: -5;
+}
+
+#special-hr{
+  width: 50% !important;
+  background-color: black;
 }
