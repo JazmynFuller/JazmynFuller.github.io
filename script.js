@@ -196,37 +196,37 @@ var quotes = [
 	'\"I\'ll tell you how the sun rose---one ribbon at a time.\"', // 193
 	'\"The ordinary acts we practice every day a home are of more imporatnce to the soul than their simplicity might suggest.\"', // 194
 	'\"Every person\'s life is a fairytale written by God\'s fingers.\"', // 195
-	// '- ', // 196
-	// '- ', // 197
-	// '- ', // 198
-	// '- ', // 199
-	// '- ', // 200
-	// '- ', // 201
-	// '- ', // 202
-	// '- ', // 203
-	// '- ', // 204
-	// '- ', // 205
-	// '- ', // 206
-	// '- ', // 207
-	// '- ', // 208
-	// '- ', // 209
-	// '- ', // 210	
-	// '- ', // 210
-	// '- ', // 211
-	// '- ', // 212
-	// '- ', // 213
-	// '- ', // 214
-	// '- ', // 215
-	// '- ', // 216
-	// '- ', // 217
-	// '- ', // 218
-	// '- ', // 219
-	// '- ', // 220	
-	// '- ', // 220
-	// '- ', // 221
-	// '- ', // 222
-	// '- ', // 223
-	// '- ', // 224
+	'\"Faith makes all things possible. Hope makes all things right. Love makes all things easy.\"', // 196
+	'\"I would rather walk with God in the dark than go alone in the light.\"', // 197
+	'\"God writes the gospel not in the Bible alone, but on the trees and flowers and clouds and stars.\"', // 198
+	'\"Beauty is the mark of God sets upon virtue.\"', // 199
+	'\"There is nothing but God\'s grace. We walk upon it; we live and die by it; it makes the nailes and axles of the universe.\"', // 200
+	'\"what the heart has once owned and had, it shall never lose.\"', // 201
+	'\"Our Creator would never have made such lovely days, and have given us the deep hearts to enjoy them, above, above and beyond all thought, unless we were meant to be immortal.\"', // 202
+	'\"The fountain of beauty is the heart, and every generous thought illustrates the walls of your chamber.\"', // 203
+	'\"Let the eternal Truth be your sole and supreme joy.\"', // 204
+	'\"True silence is the rest of the mind; it is to the spirit what sleep is to the body, nourishment and refreshment.\"', // 205
+	'\"You promise that all bad things come to an end. Until then, Father, give me contentment with the blessings I have and faith in tomorrow. Amen.\"', // 206
+	'\"All truths are easy to understand once they are discovered; the point is to discover them.\"', // 207
+	'\"\"', // 208
+	'\"\"', // 209
+	'\"\"', // 210	
+	'\"\"', // 210
+	'\"\"', // 211
+	'\"\"', // 212
+	'\"\"', // 213
+	'\"\"', // 214
+	'\"\"', // 215
+	'\"\"', // 216
+	'\"\"', // 217
+	'\"\"', // 218
+	'\"\"', // 219
+	'\"\"', // 220	
+	'\"\"', // 220
+	'\"\"', // 221
+	'\"\"', // 222
+	'\"\"', // 223
+	'\"\"', // 224
 	// '- ', // 225
 	// '- ', // 226
 	// '- ', // 227
@@ -571,37 +571,37 @@ var quotes = [
 	'- Emily Dickinson', // 193
 	'- Thomas Moore', // 194
 	'- Hans Christian Andersen', // 195
-	// '- ', // 196
-	// '- ', // 197
-	// '- ', // 198
-	// '- ', // 199
-	// '- ', // 200
-	// '- ', // 201
-	// '- ', // 202
-	// '- ', // 203
-	// '- ', // 204
-	// '- ', // 205
-	// '- ', // 206
-	// '- ', // 207
-	// '- ', // 208
-	// '- ', // 209
-	// '- ', // 210	
-	// '- ', // 210
-	// '- ', // 211
-	// '- ', // 212
-	// '- ', // 213
-	// '- ', // 214
-	// '- ', // 215
-	// '- ', // 216
-	// '- ', // 217
-	// '- ', // 218
-	// '- ', // 219
-	// '- ', // 220	
-	// '- ', // 220
-	// '- ', // 221
-	// '- ', // 222
-	// '- ', // 223
-	// '- ', // 224
+	'- Unknown', // 196
+	'- Mary Gardiner Brainard', // 197
+	'- Martin Luther', // 198
+	'- Ralph Waldo Emerson', // 199
+	'- Robert Louis Stevenson', // 200
+	'- Henry Ward Beecher', // 201
+	'- Nathaniel Hawthorne', // 202
+	'- Francis Quarles', // 203
+	'- Thomas A. Kempis', // 204
+	'- William Penn', // 205
+	'- Unknown', // 206
+	'- Galileo', // 207
+	'- ', // 208
+	'- ', // 209
+	'- ', // 210	
+	'- ', // 210
+	'- ', // 211
+	'- ', // 212
+	'- ', // 213
+	'- ', // 214
+	'- ', // 215
+	'- ', // 216
+	'- ', // 217
+	'- ', // 218
+	'- ', // 219
+	'- ', // 220	
+	'- ', // 220
+	'- ', // 221
+	'- ', // 222
+	'- ', // 223
+	'- ', // 224
 	// '- ', // 225
 	// '- ', // 226
 	// '- ', // 227
