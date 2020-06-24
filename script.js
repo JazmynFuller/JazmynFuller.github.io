@@ -127,71 +127,71 @@ var quotes = [
 	'\"Day told her sister, "When you are darkest is when you are most beautiful. It is when you are most you.\"', // 124
 	'\"Stop letting people who do so little for you control so much of your mind, feelings and emotions.\"', // 125
 	'\"Be on your guard; stand firm in the faith; be courageous; be strong.\"', // 126
-	'\"\"', // 127
-	'\"\"', // 128
-	'\"\"', // 129
-	'\"\"', // 130	
-	'\"\"', // 131
-	'\"\"', // 132
-	'\"\"', // 133
-	'\"\"', // 134
+	'\"Be very careful, then, how you live--- not as unwise but as wise, making the most of every opportunity, because the days are evil.\"', // 127
+	'\"Whatever is at the center of our life will be the source of our security, guidance, wisdom, and power.\"', // 128
+	'\"Of all the pursuits open to men, the search for wisdom is most perfect, more sublime, more profitable, and more full of joy.\"', // 129
+	'\"The best things are nearest: \n breath in your nostrils, light in your eyes, flowers at your feet, duties at your hand, the path of God just before you.\"', // 130	
+	'\"It is a characteristic of wisdom not to do desperate things.\"', // 131
+	'\"Character is doing the right thing when nobody\'s looking. There are too many people who think that the only thing that\'s right is to get by, and the only thing that\'s wrong is to get caught.\"', // 132
+	'\"Let us learn to cast our hearts into God.\"', // 133
+	'\"God wants nothing from us except our needs, and these furnish Him with room to display His bounty when He supplies them freely... Not what I have but what I o not have is the first point of contact between my soul and God.\"', // 134
 	'\"Now faith is the assurance of things hoped for, the conviction of things not seen.\"', // 135
-	'\"\"', // 136
-	'\"\"', // 137
-	'\"\"', // 138
-	'\"\"', // 139
+	'\"We were not sent into the world to do anything into which we cannot put our hearts.\"', // 136
+	'\"Where the soul is full of peace and joy, outward surroundings and circumstances are of comparatively little account.\"', // 137
+	'\"Our Lord does not care so much for the impoartance of our works as for the love with which they are done.\"', // 138
+	'\"Learn wisdom from the ways of a seedling. A seedling which is never hardened off through stress situations will never become a strong productive plant.\"', // 139
 	'\"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, 3 because you know that the testing of your faith produces perseverance. 4 Let perseverance finish its work so that you may be mature and complete, not lacking anything.\"', // 140	
-	'\"\"', // 141
-	'\"\"', // 142
+	'\"Better to light a candle than to curse the darkness.\"', // 141
+	'\"Let us not hurry so in our pace of living that we lose sight of the art of living.\"', // 142
 	'\"...a society without jaywalkers might indicate a society without artists.\"', // 143
-	'\"\"', // 144
+	'\"Wisdom will not go with comforting illusions, false sentiment, or the use of rose-colored spectacles.\"', // 144
 	'\"Two are better than one ... for if they fall, one will lift up the other.\"', // 145
 	'\"It is not power that corrupts but fear.\"', // 146
 	'\"It\'s is important to draw wisdom from many different places.\"', // 147
 	'\"You don\'t need a silver fork to eat good food.\"', // 148
-	'\"\"', // 149
+	'\"If you\'re feeling helpless, help someone.\"', // 149
 	'\"Learn from your past and be better because of your past,” she would say, “but don’t cry about your past. Life is full of pain. Let the pain sharpen you, but don’t hold on to it. Don’t be bitter.\"', // 150	
 	'\"Step out of the history that is holding you back. Step into the new story you are willing to create.\"', // 151
-	'- ', // 152
-	'- ', // 153
-	'- ', // 154
-	'- ', // 155
-	'- ', // 156
-	'- ', // 157
-	'- ', // 158
-	'- ', // 159
-	'- ', // 160	
-	'- ', // 161
-	'- ', // 162
+	'\"I hope our wisdom will grow with our power, and teach us, that the less we use our power, the greater it will be.\"', // 152
+	'\"Everyone has a unique role to fill in the world and it is important in some respect. Everyone, including and perhaps especially you, is indispensable.\"', // 153
+	'\"If one advances confidently in the direction of his dreams and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours. Go confidently in the direction of your dreams! Live the life you\'ve imagined! \"', // 154
+	'\"Earth, with her thousand voices, praises God.\"', // 155
+	'\"A man\'s wisdom gives him patience; it is to his glory to overlook an offense.\"', // 156
+	'\"God wishes to be seen, and He wishes to be sought, and He wishes to be expected, and He wishes to be trusted.\"', // 157
+	'\"Patience is the companion of wisdom.\"', // 158
+	'\"Faith is to believe what we do not see; and the reward of this faith is to see what we believe.\"', // 159
+	'\"A gentle word, a king look, a good-natured smile can work wonders and accomplish miracles.\"', // 160	
+	'\"Our wisdom out to be nothing else than to embrace with humble teachableness, and at least without finding fault, whatever is taught in sacred scripture.\"', // 161
+	'\"No matter what your age or your condition, your dreams are renewable. Whether you\'re 5 ir 105, you have a lifetime ahead of you!\"', // 162
 	'-\"We may encounter defeats, but we must not be defeated.\" ', // 163
 	'-\"Work to become, not to acquire.\" ', // 164
 	'\"To eat is a necessity, but to eat intelligently is an art.\"', // 165
-	'- ', // 166
-	'- ', // 167
-	'- ', // 168
-	'- ', // 169
-	'- ', // 170	
-	'- ', // 171
-	'- ', // 172
-	'- ', // 173
-	'- ', // 174
-	'- Let love be genuine. Abhor what is evil; hold fast to what is good.', // 175
-	// '- ', // 176
-	// '- ', // 177
-	// '- ', // 178
-	// '- ', // 179
-	// '- ', // 180	
-	// '- ', // 181
-	// '- ', // 182
-	// '- ', // 183
-	// '- ', // 184
-	// '- ', // 185
-	// '- ', // 186
-	// '- ', // 187
-	// '- ', // 188
-	// '- ', // 189
-	// '- ', // 190
-	// '- ', // 191
+	'\"How much better to get wisdom than gold, to choose understanding rather than silver!\"', // 166
+	'\"I often think flowers are the angels\' alphabet, whereby they write on hills and fields mysterious and beautiful lessons for us to feel and learn.\"', // 167
+	'\"The well of Providence is deep. It\'s the buckets we bring to it that are small.\"', // 168
+	'\"Lord, help me forget the cres of the world for today; fill my heart with light as Your blessings fall upon me and I grow closer to You. Amen.\"', // 169
+	'\"Look for the heaven here on earth. It is all around you.\"', // 170	
+	'\"Live your life while you have it. Life is a splendid gift---there is nothing small about it.\"', // 171
+	'\"Every formula which expresses a law of nature is a hymn of praise to God.\"', // 172
+	'\"If all were rain and never sun, No bow could span the hill; If all were sun and never rain, There\'d be no rainbow still.\"', // 173
+	'\"A friendly look, a kindly smile, one good act, and life\'s worthwhile.\"', // 174
+	'\"Let love be genuine. Abhor what is evil; hold fast to what is good.\"', // 175
+	'\"The smallest bit of obdience opens heaven, and the deepest truths of God immediately becomes ours.\"', // 176
+	'\"The creation of a thousand forests is in one acorn.\"', // 177
+	'\"Ideals are like stars; you will not succeed in touching them with your hands. But like the seafaring man on the desert of waters, you choose them as your guides, and following them, you will reach your destiny.\"', // 178
+	'\"The riches that are in the heart cannot be stolen.\"', // 179
+	'\"By wisdom a house is built, and through understanding it is established through knowledge its rooms are filled with rare and beautiful treasures.\"', // 180	
+	'\"Faith sees the invisible, feels the intangible, and achieves the impossible.\"', // 181
+	'\"Make no little plans; they have no magic to stire men\'s blood an probably themselves will not be realized. Make big plans; aim high in hope an work.\"', // 182
+	'\"It is a sign of conceit and immaturity to dispense with taking advice in major decisions.\"', // 183
+	'\"What you are becoming is more important than what you are accomplishing.\"', // 184
+	'\"We all mold each other\'s dreams. We all hold each other\'s fragile hopes in our hands. We all tough each other\'s hearts.\"', // 185
+	'\"In a world where there is so much to be done, I felt strongly impressed that there must be someting for me to do.\"', // 186
+	'\"Time, indeed, is a sacred gift, and each day is a little life.\"', // 187
+	'\"The thought of You stirs us so deply that we cannot be content unless we praise You, because You have made us for Yourself and our hearts find no peace until they rest in You.\"', // 188
+	'\"A gentle answer turns away wrath, but a harsh word stirs up anger.\"', // 189
+	'\"I do not ask for any crown but that which all may win; nor try to conquer any world except the one within.\"', // 190
+	'\"Pleasure is very seldom found where it is sought. Our brightest blazes are commonly kindled by unexpected sparks.\" ', // 191
 	// '- ', // 192
 	// '- ', // 193
 	// '- ', // 194
@@ -502,24 +502,24 @@ var quotes = [
 	'- Lupita Nyong\'o', // 124
 	'- Will Smith', // 125
 	'- 1 Corinthians 16:13', // 126
-	'- ', // 127
-	'- ', // 128
-	'- ', // 129
-	'- ', // 130	
-	'- ', // 131
-	'- ', // 132
-	'- ', // 133
-	'- ', // 134
+	'- Ephesians 5:15-16', // 127
+	'- Stephen Covey', // 128
+	'- Thomas Aquinas', // 129
+	'- Robert Louis Stevenson', // 130	
+	'- Henry David Thoreau', // 131
+	'- J. C. Watts', // 132
+	'- Bernard of Clairvaux', // 133
+	'- Charles H. Spurgeon', // 134
 	'- Hebrews 11:1', // 135
-	'- ', // 136
-	'- ', // 137
-	'- ', // 138
-	'- ', // 139
+	'- John Ruskin', // 136
+	'- Hannah Whithall Smith', // 137
+	'- Teresa of Avila', // 138
+	'- Stephen Sigmund', // 139
 	'- James 1:2-4', // 140	
-	'- ', // 141
-	'- ', // 142
-	'- ', // 143
-	'- ', // 144
+	'- Chinese Proverb', // 141
+	'- Sir Francis Bacon', // 142
+	'- Paul Theroux', // 143
+	'- J. I. Packer', // 144
 	'- Ecclesiastes 4:9-10', // 145
 	'- Paul Theroux', // 146
 	'- Uncle Iroh (Avatar the Last Airbender)', // 147
@@ -527,46 +527,46 @@ var quotes = [
 	'- Aung San Suu Kyi ', // 149
 	'- Trevor Noah', // 150	
 	'- Oprah Winfrey', // 151
-	'- ', // 152
-	'- ', // 153
-	'- ', // 154
-	'- ', // 155
-	'- ', // 156
-	'- ', // 157
-	'- ', // 158
-	'- ', // 159
-	'- ', // 160	
-	'- ', // 161
-	'- ', // 162
+	'- Thomas Jefferson', // 152
+	'- Nathaniel Hawthorne', // 153
+	'- Henry David Thoreau', // 154
+	'- Samuel Taylor Coleridge', // 155
+	'- Proverbs 19:11', // 156
+	'- Julian of Norwich', // 157
+	'- Augustine', // 158
+	'- Augustine', // 159
+	'- William Hazlitt', // 160	
+	'- John Calvin', // 161
+	'- Unknown', // 162
 	'- Maya Angelou', // 163
 	'- Elbert Hubbard', // 164
 	'- François de la Rochefoucauld ', // 165
-	'- ', // 166
-	'- ', // 167
-	'- ', // 168
-	'- ', // 169
-	'- ', // 170	
-	'- ', // 171
-	'- ', // 172
-	'- ', // 173
-	'- ', // 174
+	'- Proverbs 16:16', // 166
+	'- Louisa May Alcott', // 167
+	'- Mary Webb', // 168
+	'- Unknown', // 169
+	'- Unknown', // 170	
+	'- Florence Nightingale', // 171
+	'- Maria Mitchell', // 172
+	'- Christina Rossetti', // 173
+	'- Unknown', // 174
 	'- Romans 12:9', // 175
-	// '- ', // 176
-	// '- ', // 177
-	// '- ', // 178
-	// '- ', // 179
-	// '- ', // 180	
-	// '- ', // 181
-	// '- ', // 182
-	// '- ', // 183
-	// '- ', // 184
-	// '- ', // 185
-	// '- ', // 186
-	// '- ', // 187
-	// '- ', // 188
-	// '- ', // 189
-	// '- ', // 190
-	// '- ', // 191
+	'- Oswald Chambers', // 176
+	'- Ralph Waldo Emerson', // 177
+	'- Carl Schurz', // 178
+	'- Russian Proverb', // 179
+	'- Proberbs 24:3-4', // 180	
+	'- Unknown', // 181
+	'- Daniel H. Burnham', // 182
+	'- J. I. Packer', // 183
+	'- Unknown', // 184
+	'- Unknown', // 185
+	'- Dorothea Dix', // 186
+	'- Sir John Lubbock', // 187
+	'- Augustine', // 188
+	'- Proverbs 15:1', // 189
+	'- Louisa May Alcott', // 190
+	'- Samuel Johnson', // 191
 	// '- ', // 192
 	// '- ', // 193
 	// '- ', // 194
