@@ -192,10 +192,10 @@ var quotes = [
 	'\"A gentle answer turns away wrath, but a harsh word stirs up anger.\"', // 189
 	'\"I do not ask for any crown but that which all may win; nor try to conquer any world except the one within.\"', // 190
 	'\"Pleasure is very seldom found where it is sought. Our brightest blazes are commonly kindled by unexpected sparks.\" ', // 191
-	// '- ', // 192
-	// '- ', // 193
-	// '- ', // 194
-	// '- ', // 195
+	'\"Though I may not know what the outcome of everything in my life, dear Father, I am trusting in You, and I know You care for all my needs. How my heart rejoices that I can trust in You! Amen.\"', // 192
+	'\"I\'ll tell you how the sun rose---one ribbon at a time.\"', // 193
+	'\"The ordinary acts we practice every day a home are of more imporatnce to the soul than their simplicity might suggest.\"', // 194
+	'\"Every person\'s life is a fairytale written by God\'s fingers.\"', // 195
 	// '- ', // 196
 	// '- ', // 197
 	// '- ', // 198
@@ -567,10 +567,10 @@ var quotes = [
 	'- Proverbs 15:1', // 189
 	'- Louisa May Alcott', // 190
 	'- Samuel Johnson', // 191
-	// '- ', // 192
-	// '- ', // 193
-	// '- ', // 194
-	// '- ', // 195
+	'- Unknown', // 192
+	'- Emily Dickinson', // 193
+	'- Thomas Moore', // 194
+	'- Hans Christian Andersen', // 195
 	// '- ', // 196
 	// '- ', // 197
 	// '- ', // 198
