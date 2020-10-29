@@ -314,11 +314,11 @@ var quotes = [
 	'\"Having a rough day? Place your hand over your heart. Feel that? That\'s called purpose. You\'re alive for a reason. Don\'t give up\"', // 313
 	'\"Everyday may not be good, but there is something good in every day.\"', // 314	
 	'\"Even the smallest of thoughts have the potential to become the biggest of successes … all you have to do is get up and get going.\"', // 315
-	'\"\"', // 316
-	'\"\"', // 317
-	'\"\"', // 318
-	'\"\"', // 319
-	'\"\"', // 320
+	'\"The minute you think of giving up any relation, think of the reason why you held it so long.\"', // 316
+	'\"While you wake up today, someone is breathing their last breath... Thank god for another day. Don\'t waste it!!\"', // 317
+	'\"He reached down from on high and took hold of me; He drew me out of deep waters.\"', // 318
+	'\"Wake up with determination, go to bed with satisfaction.\"', // 319
+	'\"Loneliness is a special enjoyment when chosen by ourselves…but hard to digest when gifted by others.\"', // 320
 	'\"\"', // 321
 	'\"\"', // 322
 	'\"\"', // 323
@@ -683,11 +683,11 @@ var quotes = [
 	'- Unknown', // 313
 	'- Alice Morse Earle', // 314	
 	'- Unknown', // 315
-	'- ', // 316
-	'- ', // 317
-	'- ', // 318
-	'- ', // 319
-	'- ', // 320
+	'- Natsu (Fairy Tail)', // 316
+	'- Unknown', // 317
+	'- 2 Samuel 22:17', // 318
+	'- George Horace Lorimer', // 319
+	'- Unknown', // 320
 	'- ', // 321
 	'- ', // 322
 	'- ', // 323
