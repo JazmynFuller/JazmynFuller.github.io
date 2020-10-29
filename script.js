@@ -228,7 +228,7 @@ var quotes = [
 	'\"Just in case no one has told you today - Good Morning, I believe in you, you\'re doing great.\" ', // 227
 	'\"The world is full of nice people. If you can\'t find one, be one...!!!\"', // 228
 	'\"The line between failure and success is so fine... that we are often on the line and do not know it.\" ', // 229
-	'\"\"', // 220
+	'\"The morning shines upon everyone the same. Its beauty is for rich or poor alike. You are not less than anyone else in the eyes of the morning.\"', // 230
 	'\"\"', // 231
 	'\"\"', // 232
 	'\"\"', // 233
@@ -298,9 +298,9 @@ var quotes = [
 	'\"\"', // 297
 	'\"\"', // 298
 	'\"\"', // 299
-	'\"\"', // 300
-	'\"\"', // 301
-	'\"\" ', // 302
+	'\"The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without for newer and richer experience.\"', // 300
+	'\"Nothing is impossible when God is on you side.\"', // 301
+	'\"You don’t have to be great to start, but you have to start to be great.\" ', // 302
 	'\"Remember who you really are today. Know that you too have the power to overcome anything you may be facing. It\'s time for you to Rise and Shine.\" ', // 303
 	'\"Life never seems to be the way we want it, but we live it the best way we can. There is no perfect life, but we can fill it with perfect moments.\"', // 304
 	'\"Accept what is, let go of what was, have faith in what will be.\"', // 305
@@ -319,16 +319,16 @@ var quotes = [
 	'\"He reached down from on high and took hold of me; He drew me out of deep waters.\"', // 318
 	'\"Wake up with determination, go to bed with satisfaction.\"', // 319
 	'\"Loneliness is a special enjoyment when chosen by ourselves…but hard to digest when gifted by others.\"', // 320
-	'\"\"', // 321
-	'\"\"', // 322
-	'\"\"', // 323
-	'\"\"', // 324
-	'\"\"', // 325	
-	'\"\"', // 326
-	'\"\"', // 327
-	'\"\"', // 328
-	'\"\"', // 329
-	'\"\"', // 330
+	'\"Stop thinking of what could go wrong and start thinking of what could go right.\"', // 321
+	'\"When you do something beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.\"', // 322
+	'\"A mistake increases your experience & experience decreases your mistakes. You learn from your mistakes then others learn from your success.\"', // 323
+	'\"Life laughs at you when you are unhappy. Life smiles at you when you are happy. But life salutes you when you make others happy.\"', // 324
+	'\"Dear past, thank you for all the lessons. Dear future, I am ready.\"', // 325	
+	'\"This morning is what it is because you were what you were yesterday. Be what you should be today so that you can be what you want to become tomorrow.\"', // 326
+	'\"Let go of all the desires that hinders your progress and move towards your purpose.\"', // 327
+	'\"Procastination is the arrogant assumption that God owes you another opportunity to do what you already had time to do.\"', // 328
+	'\"When the sun’s rays first appear over the horizon, we are reminded that there is always something good about the day.\"', // 329
+	'\" Smile in the mirror. Do that every morning, and you’ll start to see a big difference in your life.\"', // 330
 	'\"\"', // 331
 	'\"\"', // 332
 	'\"\"', // 333
@@ -597,7 +597,7 @@ var quotes = [
 	'- Unknown', // 227
 	'- Nishan Panwar', // 228
 	'- ELbert Hubbard', // 229
-	'- ', // 220
+	'- Unknown', // 220
 	'- ', // 231
 	'- ', // 232
 	'- ', // 233
@@ -667,9 +667,9 @@ var quotes = [
 	'- ', // 297
 	'- ', // 298
 	'- ', // 299
-	'- ', // 300
-	'- ', // 301
-	'- ', // 302
+	'- Eleanor Roosevelt', // 300
+	'- Unknown', // 301
+	'- Zig Ziglar', // 302
 	'- George Eliiot', // 303
 	'- Unknown', // 304
 	'- Sonia Ricotti', // 305
@@ -688,16 +688,16 @@ var quotes = [
 	'- 2 Samuel 22:17', // 318
 	'- George Horace Lorimer', // 319
 	'- Unknown', // 320
-	'- ', // 321
-	'- ', // 322
-	'- ', // 323
-	'- ', // 324
-	'- ', // 325	
-	'- ', // 326
-	'- ', // 327
-	'- ', // 328
-	'- ', // 329
-	'- ', // 330
+	'- Zig Ziglar', // 321
+	'- John Lennon', // 322
+	'- Unknown', // 323
+	'- Charlie Chaplin', // 324
+	'- Unknown', // 325	
+	'- Hal Elrod', // 326
+	'- Unknown', // 327
+	'- T.D. Jakes', // 328
+	'- Unknown', // 329
+	'- Yoko Ono', // 330
 	'- ', // 331
 	'- ', // 332
 	'- ', // 333
