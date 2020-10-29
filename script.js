@@ -227,7 +227,7 @@ var quotes = [
 	'\"The greatest inspiration you can ever get is to know that you are an inspiration to others.\"', // 226
 	'\"Just in case no one has told you today - Good Morning, I believe in you, you\'re doing great.\" ', // 227
 	'\"The world is full of nice people. If you can\'t find one, be one...!!!\"', // 228
-	'\"Remember who you really are today. Know that you too have the power to overcome anything you may be facing. It\'s time for you to Rise and Shine.\" ', // 229
+	'\"The line between failure and success is so fine... that we are often on the line and do not know it.\" ', // 229
 	'\"\"', // 220
 	'\"\"', // 231
 	'\"\"', // 232
@@ -302,18 +302,18 @@ var quotes = [
 	'\"\"', // 301
 	'\"\" ', // 302
 	'\"Remember who you really are today. Know that you too have the power to overcome anything you may be facing. It\'s time for you to Rise and Shine.\" ', // 303
-	'\"\"', // 304
-	'\"\"', // 305
-	'\"\"', // 306
-	'\"\"', // 307
-	'\"\"', // 308
-	'\"\"', // 309
-	'\"\"', // 310
-	'\"\"', // 311
-	'\"\"', // 312
-	'\"\"', // 313
-	'\"\"', // 314	
-	'\"\"', // 315
+	'\"Life never seems to be the way we want it, but we live it the best way we can. There is no perfect life, but we can fill it with perfect moments.\"', // 304
+	'\"Accept what is, let go of what was, have faith in what will be.\"', // 305
+	'\"Life becomes more meaningful when you realize the simple fact that you\'ll never get the same moment twice.\"', // 306
+	'\"Worrying doesn\'t take away tomorrow\'s troubles, it takes away today\'s peace.\"', // 307
+	'\"The importance of good people in our life is just like the importance of heartbeats.. It\'s not visible but silently supports our life\"', // 308
+	'\"Set a goal that makes you want to jump out of bed in the morning.\"', // 309
+	'\"When you start each day with a grateful heart, light illuminates from within.\"', // 310
+	'\"You will never have this day again so make it count.\"', // 311
+	'\"Don\'t worry be happy\"', // 312
+	'\"Having a rough day? Place your hand over your heart. Feel that? That\'s called purpose. You\'re alive for a reason. Don\'t give up\"', // 313
+	'\"Everyday may not be good, but there is something good in every day.\"', // 314	
+	'\"Even the smallest of thoughts have the potential to become the biggest of successes … all you have to do is get up and get going.\"', // 315
 	'\"\"', // 316
 	'\"\"', // 317
 	'\"\"', // 318
@@ -596,7 +596,7 @@ var quotes = [
 	'- Unknown', // 226
 	'- Unknown', // 227
 	'- Nishan Panwar', // 228
-	'- ', // 229
+	'- ELbert Hubbard', // 229
 	'- ', // 220
 	'- ', // 231
 	'- ', // 232
@@ -671,18 +671,18 @@ var quotes = [
 	'- ', // 301
 	'- ', // 302
 	'- George Eliiot', // 303
-	'- ', // 304
-	'- ', // 305
-	'- ', // 306
-	'- ', // 307
-	'- ', // 308
-	'- ', // 309
-	'- ', // 310
-	'- ', // 311
-	'- ', // 312
-	'- ', // 313
-	'- ', // 314	
-	'- ', // 315
+	'- Unknown', // 304
+	'- Sonia Ricotti', // 305
+	'- Unknown', // 306
+	'- Ammar Qamar', // 307
+	'- Unknown', // 308
+	'- Brian Tracy', // 309
+	'- Roy T. Bennet', // 310
+	'- Unknown', // 311
+	'- Bobby McFerrin', // 312
+	'- Unknown', // 313
+	'- Alice Morse Earle', // 314	
+	'- Unknown', // 315
 	'- ', // 316
 	'- ', // 317
 	'- ', // 318
@@ -797,11 +797,3 @@ function seenAlready(randomNumber) {
 	}
 	console.log(seen);
 }
-
-
-
-
-
-
-
-
