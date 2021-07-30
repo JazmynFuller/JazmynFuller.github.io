@@ -46,3 +46,13 @@ header .overlay {
     display: none;
   }
 }
+
+#latest-trip{
+  color: #fff;
+  text-align: center;
+  background-color: #343a40;
+}
+
+#latest-trip-title{
+  font-weight: bolder;
+}
